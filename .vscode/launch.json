@@ -1,0 +1,57 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(gdb) 启动",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "./build/BlackBox.elf",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "targetArchitecture": "arm",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\tools\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gdb.exe",
+      "externalConsole": false,
+      "miDebuggerServerAddress": "10.147.19.225:3333",
+      "setupCommands": [
+          {
+              "description": "为 gdb 启用整齐打印",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "在 main 断点",
+              "text": "break main"
+          },
+          // {
+          //   "description": "加载 ELF 文件",
+          //   "text": "file C:/Users/ische/Desktop/BlackBox/build/BlackBox.elf"
+          // },
+          // {
+          //       "description": "连接 OpenOCD",
+          //       "text": "target remote 10.147.19.225:3333"
+          // },
+          // {
+          //       "description": "复位并暂停",
+          //       "text": "monitor reset halt"
+          // },
+      ]
+    },
+    
+    {
+      "name": "Cortex Debug",
+      "cwd": "${workspaceFolder}",
+      "executable": "./build/Debug/blackbox_v2_bootloader.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "openocd",
+      "configFiles": [
+        "stm32f4x_daplink.cfg"
+      ],
+      "rtos": "FreeRTOS"
+    }
+  ]
+}
