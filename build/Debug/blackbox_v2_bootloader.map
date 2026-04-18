@@ -3017,7 +3017,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x08000000                g_pfnVectors
                 0x08000198                . = ALIGN (0x4)
 
-.text           0x080001a0     0x4b44
+.text           0x080001a0     0x4b94
                 0x080001a0                . = ALIGN (0x4)
  *(.text)
  .text          0x080001a0       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -3047,584 +3047,583 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x08000668       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
                 0x08000668                fh_bl_hello
  .text.fh_bl_info_write
-                0x080006c4       0x6c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x080006c4       0xbe CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
                 0x080006c4                fh_bl_info_write
  .text.fh_bl_update_check
-                0x08000730       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x08000730                fh_bl_update_check
- *fill*         0x08000752        0x2 
+                0x08000782       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x08000782                fh_bl_update_check
  .text.fh_bl_ack
-                0x08000754       0x4c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x080007a4       0x4c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
  .text.stm32_flash_write
-                0x080007a0       0x66 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x080007a0                stm32_flash_write
- *fill*         0x08000806        0x2 
+                0x080007f0       0x66 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x080007f0                stm32_flash_write
+ *fill*         0x08000856        0x2 
  .text.fh_bl_flash_write
-                0x08000808       0xe4 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x08000808                fh_bl_flash_write
+                0x08000858       0xe4 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x08000858                fh_bl_flash_write
  .text.fh_bl_flash_write_final
-                0x080008ec       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x080008ec                fh_bl_flash_write_final
+                0x0800093c       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x0800093c                fh_bl_flash_write_final
  .text.fh_bl_clear_app
-                0x08000948       0x62 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x08000948                fh_bl_clear_app
- *fill*         0x080009aa        0x2 
+                0x08000998       0x62 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x08000998                fh_bl_clear_app
+ *fill*         0x080009fa        0x2 
  .text.fh_bl_update
-                0x080009ac       0x8c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x080009ac                fh_bl_update
+                0x080009fc       0x8c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x080009fc                fh_bl_update
  .text.fh_bl_jmp_to_app
-                0x08000a38       0x88 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x08000a38                fh_bl_jmp_to_app
+                0x08000a88       0x88 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x08000a88                fh_bl_jmp_to_app
  .text.fh_bl_boot
-                0x08000ac0       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                0x08000ac0                fh_bl_boot
+                0x08000b10       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                0x08000b10                fh_bl_boot
  .text.RingBuff_Init
-                0x08000b1c       0x26 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
-                0x08000b1c                RingBuff_Init
+                0x08000b6c       0x26 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+                0x08000b6c                RingBuff_Init
  .text.Write_RingBuff
-                0x08000b42       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
-                0x08000b42                Write_RingBuff
+                0x08000b92       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+                0x08000b92                Write_RingBuff
  .text.Read_RingBuff
-                0x08000b98       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
-                0x08000b98                Read_RingBuff
- *fill*         0x08000bee        0x2 
+                0x08000be8       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+                0x08000be8                Read_RingBuff
+ *fill*         0x08000c3e        0x2 
  .text.fh_stream_set_crc_func
-                0x08000bf0       0x20 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
-                0x08000bf0                fh_stream_set_crc_func
+                0x08000c40       0x20 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000c40                fh_stream_set_crc_func
  .text.fh_stream_pack
-                0x08000c10       0x84 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
-                0x08000c10                fh_stream_pack
+                0x08000c60       0x84 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000c60                fh_stream_pack
  .text.fh_state_idle
-                0x08000c94       0x40 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000ce4       0x40 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .text.fh_state_tag
-                0x08000cd4       0x2c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000d24       0x2c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .text.fh_state_length
-                0x08000d00       0x2c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000d50       0x2c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .text.fh_state_value
-                0x08000d2c       0x4c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000d7c       0x4c CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .text.fh_state_crc
-                0x08000d78       0x84 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000dc8       0x84 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .text.fh_stream_unpack
-                0x08000dfc       0x54 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
-                0x08000dfc                fh_stream_unpack
- .text.crc32    0x08000e50       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
-                0x08000e50                crc32
- .text.main     0x08000eac       0x50 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
-                0x08000eac                main
+                0x08000e4c       0x54 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08000e4c                fh_stream_unpack
+ .text.crc32    0x08000ea0       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+                0x08000ea0                crc32
+ .text.main     0x08000efc       0x50 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+                0x08000efc                main
  .text.SystemClock_Config
-                0x08000efc       0xd0 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
-                0x08000efc                SystemClock_Config
+                0x08000f4c       0xd0 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+                0x08000f4c                SystemClock_Config
  .text.Error_Handler
-                0x08000fcc        0xa CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
-                0x08000fcc                Error_Handler
- *fill*         0x08000fd6        0x2 
+                0x0800101c        0xa CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+                0x0800101c                Error_Handler
+ *fill*         0x08001026        0x2 
  .text.MX_GPIO_Init
-                0x08000fd8       0x6c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
-                0x08000fd8                MX_GPIO_Init
+                0x08001028       0x6c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
+                0x08001028                MX_GPIO_Init
  .text.MX_CRC_Init
-                0x08001044       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
-                0x08001044                MX_CRC_Init
+                0x08001094       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+                0x08001094                MX_CRC_Init
  .text.HAL_CRC_MspInit
-                0x0800106c       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
-                0x0800106c                HAL_CRC_MspInit
+                0x080010bc       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+                0x080010bc                HAL_CRC_MspInit
  .text.__io_putchar
-                0x080010b0       0x24 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
-                0x080010b0                __io_putchar
+                0x08001100       0x24 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+                0x08001100                __io_putchar
  .text.MX_USART1_UART_Init
-                0x080010d4       0x54 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
-                0x080010d4                MX_USART1_UART_Init
+                0x08001124       0x54 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+                0x08001124                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x08001128       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
-                0x08001128                HAL_UART_MspInit
+                0x08001178       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+                0x08001178                HAL_UART_MspInit
  .text.NMI_Handler
-                0x080011c8        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011c8                NMI_Handler
+                0x08001218        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001218                NMI_Handler
  .text.HardFault_Handler
-                0x080011ce        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011ce                HardFault_Handler
+                0x0800121e        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800121e                HardFault_Handler
  .text.MemManage_Handler
-                0x080011d4        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011d4                MemManage_Handler
+                0x08001224        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001224                MemManage_Handler
  .text.BusFault_Handler
-                0x080011da        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011da                BusFault_Handler
+                0x0800122a        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800122a                BusFault_Handler
  .text.UsageFault_Handler
-                0x080011e0        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011e0                UsageFault_Handler
+                0x08001230        0x6 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001230                UsageFault_Handler
  .text.SVC_Handler
-                0x080011e6        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011e6                SVC_Handler
+                0x08001236        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001236                SVC_Handler
  .text.DebugMon_Handler
-                0x080011f4        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080011f4                DebugMon_Handler
+                0x08001244        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001244                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001202        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001202                PendSV_Handler
+                0x08001252        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001252                PendSV_Handler
  .text.SysTick_Handler
-                0x08001210        0xc CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001210                SysTick_Handler
+                0x08001260        0xc CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001260                SysTick_Handler
  .text.RCC_IRQHandler
-                0x0800121c        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800121c                RCC_IRQHandler
- *fill*         0x0800122a        0x2 
+                0x0800126c        0xe CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800126c                RCC_IRQHandler
+ *fill*         0x0800127a        0x2 
  .text.USART1_IRQHandler
-                0x0800122c       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800122c                USART1_IRQHandler
+                0x0800127c       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800127c                USART1_IRQHandler
  .text.HAL_MspInit
-                0x08001240       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001240                HAL_MspInit
+                0x08001290       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001290                HAL_MspInit
  .text.HAL_CRC_Init
-                0x0800129c       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
-                0x0800129c                HAL_CRC_Init
+                0x080012ec       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+                0x080012ec                HAL_CRC_Init
  .text.HAL_RCC_OscConfig
-                0x080012d4      0x4f0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080012d4                HAL_RCC_OscConfig
+                0x08001324      0x4f0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001324                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x080017c4      0x1cc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080017c4                HAL_RCC_ClockConfig
+                0x08001814      0x1cc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001814                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001990      0x20c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001990                HAL_RCC_GetSysClockFreq
+                0x080019e0      0x20c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x080019e0                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08001b9c       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001b9c                HAL_RCC_GetHCLKFreq
+                0x08001bec       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001bec                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08001bb4       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001bb4                HAL_RCC_GetPCLK1Freq
+                0x08001c04       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001c04                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08001bdc       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001bdc                HAL_RCC_GetPCLK2Freq
+                0x08001c2c       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001c2c                HAL_RCC_GetPCLK2Freq
  .text.HAL_FLASH_Program
-                0x08001c04       0xa4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
-                0x08001c04                HAL_FLASH_Program
+                0x08001c54       0xa4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001c54                HAL_FLASH_Program
  .text.HAL_FLASH_Unlock
-                0x08001ca8       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
-                0x08001ca8                HAL_FLASH_Unlock
+                0x08001cf8       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001cf8                HAL_FLASH_Unlock
  .text.HAL_FLASH_Lock
-                0x08001cec       0x20 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
-                0x08001cec                HAL_FLASH_Lock
+                0x08001d3c       0x20 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001d3c                HAL_FLASH_Lock
  .text.FLASH_WaitForLastOperation
-                0x08001d0c       0x80 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
-                0x08001d0c                FLASH_WaitForLastOperation
+                0x08001d5c       0x80 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001d5c                FLASH_WaitForLastOperation
  .text.FLASH_Program_DoubleWord
-                0x08001d8c       0x64 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001ddc       0x64 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .text.FLASH_Program_Word
-                0x08001df0       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001e40       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .text.FLASH_Program_HalfWord
-                0x08001e34       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001e84       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .text.FLASH_Program_Byte
-                0x08001e7c       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001ecc       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .text.FLASH_SetErrorCode
-                0x08001ec0       0xcc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+                0x08001f10       0xcc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .text.HAL_FLASHEx_Erase
-                0x08001f8c       0xdc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
-                0x08001f8c                HAL_FLASHEx_Erase
+                0x08001fdc       0xdc CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+                0x08001fdc                HAL_FLASHEx_Erase
  .text.FLASH_MassErase
-                0x08002068       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+                0x080020b8       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .text.FLASH_Erase_Sector
-                0x080020b0       0x90 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
-                0x080020b0                FLASH_Erase_Sector
+                0x08002100       0x90 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+                0x08002100                FLASH_Erase_Sector
  .text.FLASH_FlushCaches
-                0x08002140       0x8c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
-                0x08002140                FLASH_FlushCaches
+                0x08002190       0x8c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+                0x08002190                FLASH_FlushCaches
  .text.HAL_GPIO_Init
-                0x080021cc      0x308 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x080021cc                HAL_GPIO_Init
+                0x0800221c      0x308 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x0800221c                HAL_GPIO_Init
  .text.HAL_DMA_Abort
-                0x080024d4       0xe0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080024d4                HAL_DMA_Abort
+                0x08002524       0xe0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002524                HAL_DMA_Abort
  .text.HAL_DMA_Abort_IT
-                0x080025b4       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080025b4                HAL_DMA_Abort_IT
+                0x08002604       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002604                HAL_DMA_Abort_IT
  .text.__NVIC_SetPriorityGrouping
-                0x080025f8       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002648       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08002640       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002690       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x0800265c       0x3c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080026ac       0x3c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_DisableIRQ
-                0x08002698       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080026e8       0x48 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080026e0       0x54 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002730       0x54 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08002734       0x66 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- *fill*         0x0800279a        0x2 
+                0x08002784       0x66 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ *fill*         0x080027ea        0x2 
  .text.SysTick_Config
-                0x0800279c       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080027ec       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x080027e0       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x080027e0                HAL_NVIC_SetPriorityGrouping
+                0x08002830       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002830                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080027f6       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x080027f6                HAL_NVIC_SetPriority
+                0x08002846       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002846                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800282e       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800282e                HAL_NVIC_EnableIRQ
+                0x0800287e       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800287e                HAL_NVIC_EnableIRQ
  .text.HAL_NVIC_DisableIRQ
-                0x0800284a       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800284a                HAL_NVIC_DisableIRQ
+                0x0800289a       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800289a                HAL_NVIC_DisableIRQ
  .text.HAL_SYSTICK_Config
-                0x08002866       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08002866                HAL_SYSTICK_Config
- *fill*         0x0800287e        0x2 
+                0x080028b6       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080028b6                HAL_SYSTICK_Config
+ *fill*         0x080028ce        0x2 
  .text.HAL_Init
-                0x08002880       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08002880                HAL_Init
+                0x080028d0       0x44 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080028d0                HAL_Init
  .text.HAL_DeInit
-                0x080028c4       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080028c4                HAL_DeInit
+                0x08002914       0x5c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002914                HAL_DeInit
  .text.HAL_MspDeInit
-                0x08002920        0xe CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08002920                HAL_MspDeInit
- *fill*         0x0800292e        0x2 
+                0x08002970        0xe CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002970                HAL_MspDeInit
+ *fill*         0x0800297e        0x2 
  .text.HAL_InitTick
-                0x08002930       0x60 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08002930                HAL_InitTick
+                0x08002980       0x60 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002980                HAL_InitTick
  .text.HAL_IncTick
-                0x08002990       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08002990                HAL_IncTick
+                0x080029e0       0x28 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080029e0                HAL_IncTick
  .text.HAL_GetTick
-                0x080029b8       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080029b8                HAL_GetTick
+                0x08002a08       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002a08                HAL_GetTick
  .text.HAL_UART_Init
-                0x080029d0       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080029d0                HAL_UART_Init
+                0x08002a20       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002a20                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08002a70      0x116 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002a70                HAL_UART_Transmit
+                0x08002ac0      0x116 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002ac0                HAL_UART_Transmit
  .text.HAL_UART_Receive_IT
-                0x08002b86       0x4a CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002b86                HAL_UART_Receive_IT
+                0x08002bd6       0x4a CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002bd6                HAL_UART_Receive_IT
  .text.HAL_UART_IRQHandler
-                0x08002bd0      0x554 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002bd0                HAL_UART_IRQHandler
+                0x08002c20      0x554 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002c20                HAL_UART_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x08003124       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003124                HAL_UART_TxCpltCallback
+                0x08003174       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003174                HAL_UART_TxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x08003138       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003138                HAL_UART_ErrorCallback
+                0x08003188       0x14 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003188                HAL_UART_ErrorCallback
  .text.HAL_UARTEx_RxEventCallback
-                0x0800314c       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x0800314c                HAL_UARTEx_RxEventCallback
+                0x0800319c       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800319c                HAL_UARTEx_RxEventCallback
  .text.UART_WaitOnFlagUntilTimeout
-                0x08003164       0xb2 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080031b4       0xb2 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Start_Receive_IT
-                0x08003216       0x74 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003216                UART_Start_Receive_IT
+                0x08003266       0x74 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003266                UART_Start_Receive_IT
  .text.UART_EndRxTransfer
-                0x0800328a       0xc6 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080032da       0xc6 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x08003350       0x22 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080033a0       0x22 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x08003372       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080033c2       0xa0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndTransmit_IT
-                0x08003412       0x30 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003462       0x30 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Receive_IT
-                0x08003442      0x17c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- *fill*         0x080035be        0x2 
+                0x08003492      0x17c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ *fill*         0x0800360e        0x2 
  .text.UART_SetConfig
-                0x080035c0      0x4e8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003610      0x4e8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.SystemInit
-                0x08003aa8       0x24 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08003aa8                SystemInit
- .text._sbrk    0x08003acc       0x6c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
-                0x08003acc                _sbrk
- .text._read    0x08003b38       0x3a CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003b38                _read
- .text._write   0x08003b72       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003b72                _write
- .text._close   0x08003baa       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003baa                _close
- .text._fstat   0x08003bc2       0x20 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003bc2                _fstat
- .text._isatty  0x08003be2       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003be2                _isatty
- .text._lseek   0x08003bf8       0x1a CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
-                0x08003bf8                _lseek
- *fill*         0x08003c12        0x2 
+                0x08003af8       0x24 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08003af8                SystemInit
+ .text._sbrk    0x08003b1c       0x6c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+                0x08003b1c                _sbrk
+ .text._read    0x08003b88       0x3a CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003b88                _read
+ .text._write   0x08003bc2       0x38 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003bc2                _write
+ .text._close   0x08003bfa       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003bfa                _close
+ .text._fstat   0x08003c12       0x20 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003c12                _fstat
+ .text._isatty  0x08003c32       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003c32                _isatty
+ .text._lseek   0x08003c48       0x1a CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+                0x08003c48                _lseek
+ *fill*         0x08003c62        0x2 
  .text.Reset_Handler
-                0x08003c14       0x50 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
-                0x08003c14                Reset_Handler
+                0x08003c64       0x50 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
+                0x08003c64                Reset_Handler
  .text.Default_Handler
-                0x08003c64        0x2 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
-                0x08003c64                RTC_Alarm_IRQHandler
-                0x08003c64                EXTI2_IRQHandler
-                0x08003c64                SPI4_IRQHandler
-                0x08003c64                TIM1_CC_IRQHandler
-                0x08003c64                DMA2_Stream5_IRQHandler
-                0x08003c64                DMA1_Stream5_IRQHandler
-                0x08003c64                PVD_IRQHandler
-                0x08003c64                SDIO_IRQHandler
-                0x08003c64                TAMP_STAMP_IRQHandler
-                0x08003c64                EXTI3_IRQHandler
-                0x08003c64                TIM1_UP_TIM10_IRQHandler
-                0x08003c64                I2C3_ER_IRQHandler
-                0x08003c64                EXTI0_IRQHandler
-                0x08003c64                I2C2_EV_IRQHandler
-                0x08003c64                DMA1_Stream2_IRQHandler
-                0x08003c64                FPU_IRQHandler
-                0x08003c64                DMA2_Stream2_IRQHandler
-                0x08003c64                SPI1_IRQHandler
-                0x08003c64                TIM1_BRK_TIM9_IRQHandler
-                0x08003c64                DMA2_Stream3_IRQHandler
-                0x08003c64                USART6_IRQHandler
-                0x08003c64                DMA2_Stream0_IRQHandler
-                0x08003c64                TIM4_IRQHandler
-                0x08003c64                I2C1_EV_IRQHandler
-                0x08003c64                DMA1_Stream6_IRQHandler
-                0x08003c64                DMA1_Stream1_IRQHandler
-                0x08003c64                TIM3_IRQHandler
-                0x08003c64                Default_Handler
-                0x08003c64                EXTI15_10_IRQHandler
-                0x08003c64                ADC_IRQHandler
-                0x08003c64                DMA1_Stream7_IRQHandler
-                0x08003c64                SPI5_IRQHandler
-                0x08003c64                TIM5_IRQHandler
-                0x08003c64                DMA2_Stream7_IRQHandler
-                0x08003c64                I2C3_EV_IRQHandler
-                0x08003c64                EXTI9_5_IRQHandler
-                0x08003c64                RTC_WKUP_IRQHandler
-                0x08003c64                SPI2_IRQHandler
-                0x08003c64                DMA1_Stream0_IRQHandler
-                0x08003c64                EXTI4_IRQHandler
-                0x08003c64                WWDG_IRQHandler
-                0x08003c64                TIM2_IRQHandler
-                0x08003c64                OTG_FS_WKUP_IRQHandler
-                0x08003c64                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08003c64                EXTI1_IRQHandler
-                0x08003c64                USART2_IRQHandler
-                0x08003c64                I2C2_ER_IRQHandler
-                0x08003c64                DMA2_Stream1_IRQHandler
-                0x08003c64                FLASH_IRQHandler
-                0x08003c64                DMA2_Stream4_IRQHandler
-                0x08003c64                OTG_FS_IRQHandler
-                0x08003c64                SPI3_IRQHandler
-                0x08003c64                DMA1_Stream4_IRQHandler
-                0x08003c64                I2C1_ER_IRQHandler
-                0x08003c64                DMA2_Stream6_IRQHandler
-                0x08003c64                DMA1_Stream3_IRQHandler
- *fill*         0x08003c66        0x2 
- .text.__errno  0x08003c68        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
-                0x08003c68                __errno
- .text.memcpy   0x08003c74       0x1c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
-                0x08003c74                memcpy
- .text.memmove  0x08003c90       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memmove.o)
-                0x08003c90                memmove
- .text.printf   0x08003cc4       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-printf.o)
-                0x08003cc4                iprintf
-                0x08003cc4                printf
- .text._puts_r  0x08003cf4       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
-                0x08003cf4                _puts_r
- .text.puts     0x08003dd0       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
-                0x08003dd0                puts
+                0x08003cb4        0x2 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
+                0x08003cb4                RTC_Alarm_IRQHandler
+                0x08003cb4                EXTI2_IRQHandler
+                0x08003cb4                SPI4_IRQHandler
+                0x08003cb4                TIM1_CC_IRQHandler
+                0x08003cb4                DMA2_Stream5_IRQHandler
+                0x08003cb4                DMA1_Stream5_IRQHandler
+                0x08003cb4                PVD_IRQHandler
+                0x08003cb4                SDIO_IRQHandler
+                0x08003cb4                TAMP_STAMP_IRQHandler
+                0x08003cb4                EXTI3_IRQHandler
+                0x08003cb4                TIM1_UP_TIM10_IRQHandler
+                0x08003cb4                I2C3_ER_IRQHandler
+                0x08003cb4                EXTI0_IRQHandler
+                0x08003cb4                I2C2_EV_IRQHandler
+                0x08003cb4                DMA1_Stream2_IRQHandler
+                0x08003cb4                FPU_IRQHandler
+                0x08003cb4                DMA2_Stream2_IRQHandler
+                0x08003cb4                SPI1_IRQHandler
+                0x08003cb4                TIM1_BRK_TIM9_IRQHandler
+                0x08003cb4                DMA2_Stream3_IRQHandler
+                0x08003cb4                USART6_IRQHandler
+                0x08003cb4                DMA2_Stream0_IRQHandler
+                0x08003cb4                TIM4_IRQHandler
+                0x08003cb4                I2C1_EV_IRQHandler
+                0x08003cb4                DMA1_Stream6_IRQHandler
+                0x08003cb4                DMA1_Stream1_IRQHandler
+                0x08003cb4                TIM3_IRQHandler
+                0x08003cb4                Default_Handler
+                0x08003cb4                EXTI15_10_IRQHandler
+                0x08003cb4                ADC_IRQHandler
+                0x08003cb4                DMA1_Stream7_IRQHandler
+                0x08003cb4                SPI5_IRQHandler
+                0x08003cb4                TIM5_IRQHandler
+                0x08003cb4                DMA2_Stream7_IRQHandler
+                0x08003cb4                I2C3_EV_IRQHandler
+                0x08003cb4                EXTI9_5_IRQHandler
+                0x08003cb4                RTC_WKUP_IRQHandler
+                0x08003cb4                SPI2_IRQHandler
+                0x08003cb4                DMA1_Stream0_IRQHandler
+                0x08003cb4                EXTI4_IRQHandler
+                0x08003cb4                WWDG_IRQHandler
+                0x08003cb4                TIM2_IRQHandler
+                0x08003cb4                OTG_FS_WKUP_IRQHandler
+                0x08003cb4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08003cb4                EXTI1_IRQHandler
+                0x08003cb4                USART2_IRQHandler
+                0x08003cb4                I2C2_ER_IRQHandler
+                0x08003cb4                DMA2_Stream1_IRQHandler
+                0x08003cb4                FLASH_IRQHandler
+                0x08003cb4                DMA2_Stream4_IRQHandler
+                0x08003cb4                OTG_FS_IRQHandler
+                0x08003cb4                SPI3_IRQHandler
+                0x08003cb4                DMA1_Stream4_IRQHandler
+                0x08003cb4                I2C1_ER_IRQHandler
+                0x08003cb4                DMA2_Stream6_IRQHandler
+                0x08003cb4                DMA1_Stream3_IRQHandler
+ *fill*         0x08003cb6        0x2 
+ .text.__errno  0x08003cb8        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
+                0x08003cb8                __errno
+ .text.memcpy   0x08003cc4       0x1c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
+                0x08003cc4                memcpy
+ .text.memmove  0x08003ce0       0x34 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memmove.o)
+                0x08003ce0                memmove
+ .text.printf   0x08003d14       0x30 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-printf.o)
+                0x08003d14                iprintf
+                0x08003d14                printf
+ .text._puts_r  0x08003d44       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
+                0x08003d44                _puts_r
+ .text.puts     0x08003e20       0x10 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
+                0x08003e20                puts
  .text.__swbuf_r
-                0x08003de0       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
-                0x08003de0                __swbuf_r
+                0x08003e30       0xa4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
+                0x08003e30                __swbuf_r
  .text.__swsetup_r
-                0x08003e84       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
-                0x08003e84                __swsetup_r
+                0x08003ed4       0xdc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
+                0x08003ed4                __swsetup_r
  .text.__sflush_r
-                0x08003f60      0x10c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
-                0x08003f60                __sflush_r
+                0x08003fb0      0x10c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
+                0x08003fb0                __sflush_r
  .text._fflush_r
-                0x0800406c       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
-                0x0800406c                _fflush_r
- .text.std      0x080040e4       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080040bc       0x78 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
+                0x080040bc                _fflush_r
+ .text.std      0x08004134       0x48 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x0800412c        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0800412c                _cleanup_r
- .text.__sfmoreglue
-                0x08004138       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004138                __sfmoreglue
- .text.__sfp_lock_acquire
-                0x08004164        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004164                __sfp_lock_acquire
- .text.__sfp_lock_release
-                0x08004170        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004170                __sfp_lock_release
- .text.__sinit_lock_acquire
                 0x0800417c        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0800417c                __sinit_lock_acquire
+                0x0800417c                _cleanup_r
+ .text.__sfmoreglue
+                0x08004188       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08004188                __sfmoreglue
+ .text.__sfp_lock_acquire
+                0x080041b4        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080041b4                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x080041c0        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080041c0                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x080041cc        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080041cc                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x08004188        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004188                __sinit_lock_release
- .text.__sinit  0x08004194       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004194                __sinit
- .text.__sfp    0x08004204       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004204                __sfp
+                0x080041d8        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080041d8                __sinit_lock_release
+ .text.__sinit  0x080041e4       0x70 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x080041e4                __sinit
+ .text.__sfp    0x08004254       0x8c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08004254                __sfp
  .text._fwalk_reent
-                0x08004290       0x3e c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
-                0x08004290                _fwalk_reent
+                0x080042e0       0x3e c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
+                0x080042e0                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x080042ce        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x080042ce                __retarget_lock_init_recursive
+                0x0800431e        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x0800431e                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x080042d0        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x080042d0                __retarget_lock_acquire_recursive
+                0x08004320        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x08004320                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080042d2        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x080042d2                __retarget_lock_release_recursive
+                0x08004322        0x2 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x08004322                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x080042d4       0x4a c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
-                0x080042d4                __swhatbuf_r
- *fill*         0x0800431e        0x2 
+                0x08004324       0x4a c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
+                0x08004324                __swhatbuf_r
+ *fill*         0x0800436e        0x2 
  .text.__smakebuf_r
-                0x08004320       0x80 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
-                0x08004320                __smakebuf_r
- .text._free_r  0x080043a0       0x98 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
-                0x080043a0                _free_r
+                0x08004370       0x80 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
+                0x08004370                __smakebuf_r
+ .text._free_r  0x080043f0       0x98 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
+                0x080043f0                _free_r
  .text.sbrk_aligned
-                0x08004438       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
+                0x08004488       0x40 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x08004478       0xe8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
-                0x08004478                _malloc_r
+                0x080044c8       0xe8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
+                0x080044c8                _malloc_r
  .text.__sfputc_r
-                0x08004560       0x2e c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x080045b0       0x2e c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0800458e       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x0800458e                __sfputs_r
- *fill*         0x080045b2        0x2 
+                0x080045de       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x080045de                __sfputs_r
+ *fill*         0x08004602        0x2 
  .text._vfprintf_r
-                0x080045b4      0x260 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x080045b4                _vfprintf_r
-                0x080045b4                _vfiprintf_r
+                0x08004604      0x260 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08004604                _vfprintf_r
+                0x08004604                _vfiprintf_r
  .text._printf_common
-                0x08004814       0xda c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08004814                _printf_common
- *fill*         0x080048ee        0x2 
+                0x08004864       0xda c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004864                _printf_common
+ *fill*         0x0800493e        0x2 
  .text._printf_i
-                0x080048f0      0x24c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x080048f0                _printf_i
- .text._sbrk_r  0x08004b3c       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
-                0x08004b3c                _sbrk_r
- .text.__sread  0x08004b5c       0x22 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x08004b5c                __sread
+                0x08004940      0x24c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004940                _printf_i
+ .text._sbrk_r  0x08004b8c       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
+                0x08004b8c                _sbrk_r
+ .text.__sread  0x08004bac       0x22 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x08004bac                __sread
  .text.__swrite
-                0x08004b7e       0x38 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x08004b7e                __swrite
- .text.__sseek  0x08004bb6       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x08004bb6                __sseek
+                0x08004bce       0x38 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x08004bce                __swrite
+ .text.__sseek  0x08004c06       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x08004c06                __sseek
  .text.__sclose
-                0x08004bda        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x08004bda                __sclose
- *fill*         0x08004be2        0x2 
+                0x08004c2a        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x08004c2a                __sclose
+ *fill*         0x08004c32        0x2 
  .text._write_r
-                0x08004be4       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
-                0x08004be4                _write_r
+                0x08004c34       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
+                0x08004c34                _write_r
  .text._close_r
-                0x08004c08       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
-                0x08004c08                _close_r
+                0x08004c58       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
+                0x08004c58                _close_r
  .text._fstat_r
-                0x08004c28       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
-                0x08004c28                _fstat_r
+                0x08004c78       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
+                0x08004c78                _fstat_r
  .text._isatty_r
-                0x08004c4c       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
-                0x08004c4c                _isatty_r
+                0x08004c9c       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
+                0x08004c9c                _isatty_r
  .text._lseek_r
-                0x08004c6c       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
-                0x08004c6c                _lseek_r
+                0x08004cbc       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
+                0x08004cbc                _lseek_r
  .text.__malloc_lock
-                0x08004c90        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
-                0x08004c90                __malloc_lock
+                0x08004ce0        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
+                0x08004ce0                __malloc_lock
  .text.__malloc_unlock
-                0x08004c9c        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
-                0x08004c9c                __malloc_unlock
- .text._read_r  0x08004ca8       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
-                0x08004ca8                _read_r
+                0x08004cec        0xc c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
+                0x08004cec                __malloc_unlock
+ .text._read_r  0x08004cf8       0x24 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
+                0x08004cf8                _read_r
  *(.glue_7)
- .glue_7        0x08004ccc        0x0 linker stubs
+ .glue_7        0x08004d1c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08004ccc        0x0 linker stubs
+ .glue_7t       0x08004d1c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08004ccc        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08004d1c        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08004ccc        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08004ccc                _init
- .init          0x08004cd0        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08004d1c        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004d1c                _init
+ .init          0x08004d20        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08004cd8        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08004cd8                _fini
- .fini          0x08004cdc        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08004ce4                . = ALIGN (0x4)
-                0x08004ce4                _etext = .
+ .fini          0x08004d28        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004d28                _fini
+ .fini          0x08004d2c        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08004d34                . = ALIGN (0x4)
+                0x08004d34                _etext = .
 
-.vfp11_veneer   0x08004ce4        0x0
- .vfp11_veneer  0x08004ce4        0x0 linker stubs
+.vfp11_veneer   0x08004d34        0x0
+ .vfp11_veneer  0x08004d34        0x0 linker stubs
 
-.v4_bx          0x08004ce4        0x0
- .v4_bx         0x08004ce4        0x0 linker stubs
+.v4_bx          0x08004d34        0x0
+ .v4_bx         0x08004d34        0x0 linker stubs
 
-.iplt           0x08004ce4        0x0
- .iplt          0x08004ce4        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08004d34        0x0
+ .iplt          0x08004d34        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08004ce4      0x148
-                0x08004ce4                . = ALIGN (0x4)
+.rodata         0x08004d34      0x148
+                0x08004d34                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08004ce4       0x6a CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- *fill*         0x08004d4e        0x2 
- .rodata        0x08004d50       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .rodata        0x08004d34       0x6a CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ *fill*         0x08004d9e        0x2 
+ .rodata        0x08004da0       0x18 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x08004d68        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
-                0x08004d68                _global_impure_ptr
+                0x08004db8        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x08004db8                _global_impure_ptr
  .rodata.state_handlers
-                0x08004d6c       0x14 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+                0x08004dbc       0x14 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
  .rodata.AHBPrescTable
-                0x08004d80       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08004d80                AHBPrescTable
+                0x08004dd0       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08004dd0                AHBPrescTable
  .rodata.APBPrescTable
-                0x08004d90        0x8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08004d90                APBPrescTable
+                0x08004de0        0x8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08004de0                APBPrescTable
  .rodata.__sf_fake_stderr
-                0x08004d98       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004d98                __sf_fake_stderr
+                0x08004de8       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08004de8                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x08004db8       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004db8                __sf_fake_stdin
+                0x08004e08       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08004e08                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08004dd8       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x08004dd8                __sf_fake_stdout
+                0x08004e28       0x20 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08004e28                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x08004df8       0x11 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08004e48       0x11 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x08004e09       0x22 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08004e2c                . = ALIGN (0x4)
- *fill*         0x08004e2b        0x1 
+                0x08004e59       0x22 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004e7c                . = ALIGN (0x4)
+ *fill*         0x08004e7b        0x1 
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08004e2c        0x8
-                0x08004e2c                __exidx_start = .
+.ARM            0x08004e7c        0x8
+                0x08004e7c                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08004e2c        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08004e34                __exidx_end = .
+ .ARM.exidx     0x08004e7c        0x8 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08004e84                __exidx_end = .
 
-.rel.dyn        0x08004e34        0x0
- .rel.iplt      0x08004e34        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08004e84        0x0
+ .rel.iplt      0x08004e84        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x08004e34        0x0
-                0x08004e34                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004e84        0x0
+                0x08004e84                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004e34                PROVIDE (__preinit_array_end = .)
+                0x08004e84                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08004e34        0x4
-                0x08004e34                PROVIDE (__init_array_start = .)
+.init_array     0x08004e84        0x4
+                0x08004e84                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08004e34        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08004e38                PROVIDE (__init_array_end = .)
+ .init_array    0x08004e84        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08004e88                PROVIDE (__init_array_end = .)
 
-.fini_array     0x08004e38        0x4
+.fini_array     0x08004e88        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004e38        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08004e88        0x4 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x08004e3c                _sidata = LOADADDR (.data)
+                0x08004e8c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x498 load address 0x08004e3c
+.data           0x20000000      0x498 load address 0x08004e8c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -3655,11 +3654,11 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x20000498                . = ALIGN (0x4)
                 0x20000498                _edata = .
 
-.igot.plt       0x20000498        0x0 load address 0x080052d4
+.igot.plt       0x20000498        0x0 load address 0x08005324
  .igot.plt      0x20000498        0x0 c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000498                . = ALIGN (0x4)
 
-.bss            0x20000498      0x6a8 load address 0x080052d4
+.bss            0x20000498      0x6a8 load address 0x08005324
                 0x20000498                _sbss = .
                 0x20000498                __bss_start__ = _sbss
  *(.bss)
@@ -3716,7 +3715,7 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
                 0x20000b40                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000b40     0x1600 load address 0x080052d4
+                0x20000b40     0x1600 load address 0x08005324
                 0x20000b40                . = ALIGN (0x8)
                 [!provide]                PROVIDE (end = .)
                 0x20000b40                PROVIDE (_end = .)
@@ -3932,29 +3931,29 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
  .debug_frame   0x000030f4       0x2c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
  .debug_frame   0x00003120       0x5c c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-reent.o)
 
-.debug_info     0x00000000     0xc0dc
- .debug_info    0x00000000     0x11e4 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_info    0x000011e4      0x1a2 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
- .debug_info    0x00001386      0x4a4 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_info    0x0000182a      0xad3 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_info    0x000022fd      0x2f1 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
- .debug_info    0x000025ee      0x47b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
- .debug_info    0x00002a69      0xb3e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
- .debug_info    0x000035a7      0x66c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00003c13      0x469 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x0000407c      0x3aa CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
- .debug_info    0x00004426      0x95e CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x00004d84      0x5a0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
- .debug_info    0x00005324      0x828 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
- .debug_info    0x00005b4c      0x78e CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x000062da      0x93b CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x00006c15      0xdd3 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x000079e8      0x8ba CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x000082a2     0x30b8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000b35a      0x54f CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x0000b8a9      0x15f CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
- .debug_info    0x0000ba08      0x6b2 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_info    0x0000c0ba       0x22 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
+.debug_info     0x00000000     0xc109
+ .debug_info    0x00000000     0x1211 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_info    0x00001211      0x1a2 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+ .debug_info    0x000013b3      0x4a4 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_info    0x00001857      0xad3 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_info    0x0000232a      0x2f1 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000261b      0x47b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+ .debug_info    0x00002a96      0xb3e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+ .debug_info    0x000035d4      0x66c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00003c40      0x469 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x000040a9      0x3aa CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+ .debug_info    0x00004453      0x95e CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x00004db1      0x5a0 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .debug_info    0x00005351      0x828 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .debug_info    0x00005b79      0x78e CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x00006307      0x93b CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x00006c42      0xdd3 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x00007a15      0x8ba CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x000082cf     0x30b8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x0000b387      0x54f CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x0000b8d6      0x15f CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x0000ba35      0x6b2 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x0000c0e7       0x22 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
 
 .debug_abbrev   0x00000000     0x2511
  .debug_abbrev  0x00000000      0x2e8 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
@@ -4050,186 +4049,186 @@ LOAD c:/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1
  .debug_ranges  0x000008e0       0x98 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
  .debug_ranges  0x00000978       0x20 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
 
-.debug_macro    0x00000000    0x179cb
- .debug_macro   0x00000000      0x391 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00000391      0xa78 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00000e09       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00000e2b       0x8e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00000eb9       0x51 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00000f0a      0x103 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000100d       0x6a CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001077      0x1df CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001256       0x64 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000012ba       0x1e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000012d8       0x35 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000130d       0x34 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001341       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001357       0x97 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000013ee      0x341 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000172f       0xfd CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000182c       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000183c       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001852       0x43 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001895       0x34 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000018c9       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000018d9       0x58 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001931      0x182 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001ab3       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001ac3       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001adf       0x52 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001b31       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001b53       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001b63       0x52 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001bb5       0xd5 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001c8a       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001ca6       0x3d CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001ce3       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001cf9      0x16f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001e68       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00001e78      0x29b CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00002113       0x2e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00002141       0x28 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00002169       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00002185       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000021a7       0xfb CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000022a2     0x1011 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000032b3      0x11f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000033d2     0xb968 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000ed3a       0x6d CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0000eda7     0x3693 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0001243a       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00012490      0x45c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000128ec      0x9e9 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000132d5      0x115 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000133ea      0x11b CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013505       0xa5 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000135aa      0x15f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013709      0x287 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013990       0x5f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000139ef      0x236 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013c25       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013c47      0x132 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013d79      0x264 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00013fdd       0x2e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0001400b      0x127 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00014132       0x85 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000141b7       0x89 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00014240      0x2aa CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x000144ea      0x126 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00014610       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00014626       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x0001463c       0x35 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_macro   0x00014671      0x1dd CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
- .debug_macro   0x0001484e      0x174 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
- .debug_macro   0x000149c2       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
- .debug_macro   0x00014a1e      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_macro   0x00014be8       0x5e CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_macro   0x00014c46       0x94 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_macro   0x00014cda       0x57 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_macro   0x00014d31      0x35b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_macro   0x0001508c       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_macro   0x000150a8       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_macro   0x000150b8       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_macro   0x000150ce      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
- .debug_macro   0x000152a6      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
- .debug_macro   0x0001547e      0x32e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
- .debug_macro   0x000157ac      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x00015984      0x1ce CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_macro   0x00015b52      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
- .debug_macro   0x00015d16      0x1e8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_macro   0x00015efe      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
- .debug_macro   0x000160c8      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
- .debug_macro   0x00016292      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_macro   0x0001645c      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_macro   0x00016626      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_macro   0x000167ea      0x224 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_macro   0x00016a0e      0x1c5 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_macro   0x00016bd3      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_macro   0x00016d97       0xec CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00016e83       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00016e93      0x23b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x000170ce      0x23d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001730b       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001731b       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001732b       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001733b       0x35 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00017370      0x12c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001749c       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000174b2       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000174c8       0x29 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000174f1      0x241 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00017732       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001774e       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001775e      0x189 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000178e7       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000178fd       0xce CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+.debug_macro    0x00000000    0x179d7
+ .debug_macro   0x00000000      0x39d CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000039d      0xa78 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00000e15       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00000e37       0x8e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00000ec5       0x51 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00000f16      0x103 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001019       0x6a CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001083      0x1df CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001262       0x64 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000012c6       0x1e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000012e4       0x35 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001319       0x34 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000134d       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001363       0x97 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000013fa      0x341 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000173b       0xfd CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001838       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001848       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000185e       0x43 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000018a1       0x34 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000018d5       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000018e5       0x58 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000193d      0x182 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001abf       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001acf       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001aeb       0x52 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001b3d       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001b5f       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001b6f       0x52 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001bc1       0xd5 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001c96       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001cb2       0x3d CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001cef       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001d05      0x16f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001e74       0x10 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00001e84      0x29b CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000211f       0x2e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000214d       0x28 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00002175       0x1c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00002191       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000021b3       0xfb CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000022ae     0x1011 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000032bf      0x11f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000033de     0xb968 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000ed46       0x6d CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0000edb3     0x3693 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00012446       0x56 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001249c      0x45c CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000128f8      0x9e9 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000132e1      0x115 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000133f6      0x11b CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013511       0xa5 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000135b6      0x15f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013715      0x287 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001399c       0x5f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000139fb      0x236 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013c31       0x22 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013c53      0x132 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013d85      0x264 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00013fe9       0x2e CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00014017      0x127 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001413e       0x85 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000141c3       0x89 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001424c      0x2aa CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x000144f6      0x126 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001461c       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00014632       0x16 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x00014648       0x35 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_macro   0x0001467d      0x1dd CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+ .debug_macro   0x0001485a      0x174 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+ .debug_macro   0x000149ce       0x5c CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+ .debug_macro   0x00014a2a      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_macro   0x00014bf4       0x5e CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_macro   0x00014c52       0x94 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_macro   0x00014ce6       0x57 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_macro   0x00014d3d      0x35b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_macro   0x00015098       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_macro   0x000150b4       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_macro   0x000150c4       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_macro   0x000150da      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x000152b2      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+ .debug_macro   0x0001548a      0x32e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+ .debug_macro   0x000157b8      0x1d8 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x00015990      0x1ce CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x00015b5e      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+ .debug_macro   0x00015d22      0x1e8 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_macro   0x00015f0a      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .debug_macro   0x000160d4      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .debug_macro   0x0001629e      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_macro   0x00016468      0x1ca CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_macro   0x00016632      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_macro   0x000167f6      0x224 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_macro   0x00016a1a      0x1c5 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_macro   0x00016bdf      0x1c4 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_macro   0x00016da3       0xec CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00016e8f       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00016e9f      0x23b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x000170da      0x23d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00017317       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00017327       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00017337       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00017347       0x35 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001737c      0x12c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000174a8       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000174be       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000174d4       0x29 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000174fd      0x241 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001773e       0x1c CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001775a       0x10 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001776a      0x189 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000178f3       0x16 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00017909       0xce CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
 
-.debug_line     0x00000000     0xca63
- .debug_line    0x00000000      0xae7 CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
- .debug_line    0x00000ae7      0x669 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
- .debug_line    0x00001150      0x4c2 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
- .debug_line    0x00001612      0x8db CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
- .debug_line    0x00001eed      0x5e9 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
- .debug_line    0x000024d6      0x627 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
- .debug_line    0x00002afd      0x78d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
- .debug_line    0x0000328a      0x6d9 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00003963      0x5ed CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00003f50      0x732 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
- .debug_line    0x00004682      0xc67 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x000052e9      0x94c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
- .debug_line    0x00005c35      0xa4a CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
- .debug_line    0x0000667f      0xa0b CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x0000708a      0xe37 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x00007ec1      0xbcd CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x00008a8e      0x8d3 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00009361     0x27c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x0000bb25      0x65e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000c183      0x299 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0000c41c      0x5a3 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
- .debug_line    0x0000c9bf       0xa4 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
+.debug_line     0x00000000     0xca8b
+ .debug_line    0x00000000      0xb0f CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+ .debug_line    0x00000b0f      0x669 CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+ .debug_line    0x00001178      0x4c2 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_line    0x0000163a      0x8db CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_line    0x00001f15      0x5e9 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
+ .debug_line    0x000024fe      0x627 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+ .debug_line    0x00002b25      0x78d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+ .debug_line    0x000032b2      0x6d9 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x0000398b      0x5ed CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x00003f78      0x732 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+ .debug_line    0x000046aa      0xc67 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00005311      0x94c CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .debug_line    0x00005c5d      0xa4a CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .debug_line    0x000066a7      0xa0b CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x000070b2      0xe37 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x00007ee9      0xbcd CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x00008ab6      0x8d3 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00009389     0x27c4 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x0000bb4d      0x65e CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x0000c1ab      0x299 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0000c444      0x5a3 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x0000c9e7       0xa4 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
 
-.debug_str      0x00000000    0x8828f
- .debug_str     0x00000000    0x842ad CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
-                              0x845cf (size before relaxing)
- .debug_str     0x000842ad       0x7f CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
+.debug_str      0x00000000    0x882d0
+ .debug_str     0x00000000    0x842ee CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
+                              0x84610 (size before relaxing)
+ .debug_str     0x000842ee       0x7f CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
                               0x7ffd4 (size before relaxing)
- .debug_str     0x0008432c      0x1e9 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+ .debug_str     0x0008436d      0x1e9 CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
                                0x70ca (size before relaxing)
- .debug_str     0x00084515      0x27d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
+ .debug_str     0x00084556      0x27d CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
                               0x83f7c (size before relaxing)
- .debug_str     0x00084792       0x4b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
+ .debug_str     0x000847d3       0x4b CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
                               0x80045 (size before relaxing)
- .debug_str     0x000847dd      0x112 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
+ .debug_str     0x0008481e      0x112 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
                               0x80193 (size before relaxing)
- .debug_str     0x000848ef      0x122 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
+ .debug_str     0x00084930      0x122 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj
                               0x8417f (size before relaxing)
- .debug_str     0x00084a11      0x109 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x00084a52      0x109 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj
                               0x80458 (size before relaxing)
- .debug_str     0x00084b1a       0x57 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x00084b5b       0x57 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj
                               0x803db (size before relaxing)
- .debug_str     0x00084b71       0xd5 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+ .debug_str     0x00084bb2       0xd5 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
                               0x80111 (size before relaxing)
- .debug_str     0x00084c46      0x2f9 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x00084c87      0x2f9 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                               0x80502 (size before relaxing)
- .debug_str     0x00084f3f      0x2cf CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .debug_str     0x00084f80      0x2cf CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
                               0x802a2 (size before relaxing)
- .debug_str     0x0008520e      0x2fe CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .debug_str     0x0008524f      0x2fe CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
                               0x803db (size before relaxing)
- .debug_str     0x0008550c      0x1a1 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x0008554d      0x1a1 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                               0x80270 (size before relaxing)
- .debug_str     0x000856ad      0x34d CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x000856ee      0x34d CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
                               0x804f1 (size before relaxing)
- .debug_str     0x000859fa      0x3de CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x00085a3b      0x3de CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                               0x8088b (size before relaxing)
- .debug_str     0x00085dd8      0x5d2 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x00085e19      0x5d2 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                               0x80ad2 (size before relaxing)
- .debug_str     0x000863aa      0x63f CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000863eb      0x63f CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                               0x80a81 (size before relaxing)
- .debug_str     0x000869e9       0x75 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00086a2a       0x75 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj
                               0x800f5 (size before relaxing)
- .debug_str     0x00086a5e      0x4fd CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00086a9f      0x4fd CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj
                                0x5822 (size before relaxing)
- .debug_str     0x00086f5b     0x12e2 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00086f9c     0x12e2 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj
                                0x8571 (size before relaxing)
- .debug_str     0x0008823d       0x52 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
+ .debug_str     0x0008827e       0x52 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
                                  0x8c (size before relaxing)

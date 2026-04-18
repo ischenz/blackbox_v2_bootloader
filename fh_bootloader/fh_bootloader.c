@@ -14,7 +14,10 @@
 #include "main.h"
 
 #define FH_BL_APP_ADDR  (0x08020000) // app存放地址，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
-#define FH_BL_INFO_ADDR (0x08007C00) // bootloader信息存放地址，Sector 1最后1KByte,0x0800 7C00 - 0x0800 7FFF 1 Kbytes
+#define FH_BL_INFO_ADDR (0x08008000) // bootloader信息存放地址，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
+
+#define FH_BL_INFO_SECTOR FLASH_SECTOR_2 // bootloader信息存放扇区，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
+#define FH_BL_APP_SECTOR  FLASH_SECTOR_5 // app存放扇区，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
 
 RingBuff_t Uart1_RingBuff;
 uint8_t rxbuf_u1;
@@ -52,6 +55,24 @@ int fh_bl_info_write(fh_bl_info_t *info)
 {
     info->magic = 0x5A5A5A5A; // 设置magic
     HAL_FLASH_Unlock(); // 解锁FLASH
+    // 先擦除info区所在的扇区，再写入数据
+    FLASH_EraseInitTypeDef FlashEraseInit;
+    HAL_StatusTypeDef FlashStatus = HAL_OK;
+    uint32_t SectorError = 0;
+    FlashEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;     //擦除类型，扇区擦除
+    FlashEraseInit.Sector = FH_BL_INFO_SECTOR; //要擦除的扇区
+    FlashEraseInit.NbSectors = 1;                           //一次只擦除一个扇区
+    FlashEraseInit.VoltageRange = FLASH_VOLTAGE_RANGE_3;    //电压范围，VCC=2.7~3.6V之间!!
+    if (HAL_FLASHEx_Erase(&FlashEraseInit, &SectorError) != HAL_OK)
+    {
+        return -1; //发生错误了
+    }
+
+    FlashStatus = FLASH_WaitForLastOperation(20000); //等待上次操作完成
+    if (FlashStatus != HAL_OK)
+    {
+        return -1; //发生错误了
+    }
     for (uint16_t i = 0; i < sizeof(fh_bl_info_t); i += 4) {
         uint32_t word = *(uint32_t *)((uint8_t *)info + i); // 取4字节数据
         if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, FH_BL_INFO_ADDR + i, word) != HAL_OK) {
@@ -155,7 +176,7 @@ int fh_bl_clear_app(void)
     uint32_t SectorError = 0;
     HAL_FLASH_Unlock();            //解锁
     FlashEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;     //擦除类型，扇区擦除
-    FlashEraseInit.Sector = FLASH_SECTOR_5; //要擦除的扇区
+    FlashEraseInit.Sector = FH_BL_APP_SECTOR; //要擦除的扇区
     FlashEraseInit.NbSectors = 1;                           //一次只擦除一个扇区
     FlashEraseInit.VoltageRange = FLASH_VOLTAGE_RANGE_3;    //电压范围，VCC=2.7~3.6V之间!!
     if (HAL_FLASHEx_Erase(&FlashEraseInit, &SectorError) != HAL_OK)
