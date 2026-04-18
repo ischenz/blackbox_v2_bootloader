@@ -32,9 +32,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 void fh_bl_info_read(fh_bl_info_t *info)
 {
     memcpy(info, (void *)FH_BL_INFO_ADDR, sizeof(fh_bl_info_t));
-    if (info->magic != 0x5A5A5A5A) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
+    if (info->magic != FH_BL_INFO_MAGIC) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
         memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
-        info->magic = 0x5A5A5A5A; // 设置magic，表示info区已初始化
+        info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
         info->upgrade_flag = 1; // 需要升级
     }
 }
@@ -43,6 +43,7 @@ void fh_bl_hello(fh_bl_info_t *info)
 {
     printf("fh bootloader v1.0\r\n");
     printf("bootloader version: %lu\r\n", info->boot_version);
+    printf("upgrade flag: %lu\r\n", info->upgrade_flag);
     printf("app version: %lu\r\n", info->app_version);
     printf("boot count: %lu\r\n", info->boot_count);
 }
@@ -232,6 +233,7 @@ void fh_bl_boot(void)
     bl_info.boot_count++; // 启动计数加1
     fh_bl_hello(&bl_info);
     ret = fh_bl_update_check(&bl_info);
+    fh_bl_info_write(&bl_info);
     if (ret != FH_BL_UPGRADE_TYPE_NONE) // 需要升级
     {
         fh_bl_update();
