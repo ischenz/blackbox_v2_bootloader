@@ -1,0 +1,37 @@
+CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: \
+ C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\core\inc\stm32f4xx_hal_conf.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rcc.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_def.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\device\st\stm32f4xx\include\stm32f4xx.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\device\st\stm32f4xx\include\stm32f411xe.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\include\core_cm4.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdint.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_default_types.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\features.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_newlib_version.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_intsup.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_stdint.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\include\cmsis_version.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\include\cmsis_compiler.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\include\cmsis_gcc.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\include\mpu_armv7.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\cmsis\device\st\stm32f4xx\include\system_stm32f4xx.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\Legacy/stm32_hal_legacy.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rcc_ex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_gpio.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_gpio_ex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_exti.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_dma.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_dma_ex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_cortex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_crc.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash_ex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash_ramfunc.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr_ex.h \
+ c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_uart.h

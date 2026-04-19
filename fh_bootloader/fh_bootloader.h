@@ -3,7 +3,18 @@
 
 #include <stdint.h>
 
+#define FH_BL_VERSION 0x00010000 // 版本号1.0.0，格式为0x00MMmmpp，MM主版本号，mm次版本号，pp补丁版本号
 #define FH_BL_INFO_MAGIC (0x5A5A5A5A)
+#define FH_BL_APP_ADDR  (0x08020000) // app存放地址，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
+#define FH_BL_INFO_ADDR (0x08008000) // bootloader信息存放地址，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
+#define FH_BL_INFO_SECTOR FLASH_SECTOR_2 // bootloader信息存放扇区，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
+#define FH_BL_APP_SECTOR  FLASH_SECTOR_5 // app存放扇区，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
+
+typedef enum { // 开机 或者升级
+    FH_BL_UPGRADE_TYPE_NONE = 0, // 正常启动
+    FH_BL_UPGRADE_TYPE_KEY,      // 按键触发升级
+    FH_BL_UPGRADE_TYPE_FLAG,     // 升级标志触发升级
+} fh_bl_upgrade_type_e;
 
 typedef struct
 {

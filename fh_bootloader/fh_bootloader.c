@@ -13,15 +13,19 @@
 #include "usart.h"
 #include "main.h"
 
-#define FH_BL_APP_ADDR  (0x08020000) // app存放地址，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
-#define FH_BL_INFO_ADDR (0x08008000) // bootloader信息存放地址，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
-
-#define FH_BL_INFO_SECTOR FLASH_SECTOR_2 // bootloader信息存放扇区，Sector 16KByte,0x0800 8000 - 0x0800 BFFF 16 Kbytes
-#define FH_BL_APP_SECTOR  FLASH_SECTOR_5 // app存放扇区，Sector 5,0x0802 0000 - 0x0803 FFFF 128 Kbytes
 
 RingBuff_t Uart1_RingBuff;
 uint8_t rxbuf_u1;
 uint32_t pack_id = 0;
+
+#define  FH_BL_KEY_PRESSED  1  // 按键按下状态，GPIO读取到0
+#define  FH_BL_KEY_RELEASED 0
+
+
+int fh_key_get_state(void)
+{
+    return HAL_GPIO_ReadPin(key_GPIO_Port, key_Pin); // TODO: 实现按键状态读取函数，返回1表示按键按下，0表示按键未按下
+}
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -36,19 +40,11 @@ void fh_bl_info_read(fh_bl_info_t *info)
 {
     memcpy(info, (void *)FH_BL_INFO_ADDR, sizeof(fh_bl_info_t));
     if (info->magic != FH_BL_INFO_MAGIC) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
+        printf("bootloader info invalid, initialize it\r\n");
         memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
         info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
         info->upgrade_flag = 1; // 需要升级
     }
-}
-
-void fh_bl_hello(fh_bl_info_t *info)
-{
-    printf("fh bootloader v1.0\r\n");
-    printf("bootloader version: %lu\r\n", info->boot_version);
-    printf("upgrade flag: %lu\r\n", info->upgrade_flag);
-    printf("app version: %lu\r\n", info->app_version);
-    printf("boot count: %lu\r\n", info->boot_count);
 }
 
 int fh_bl_info_write(fh_bl_info_t *info)
@@ -84,18 +80,14 @@ int fh_bl_info_write(fh_bl_info_t *info)
     return 0; // 写入成功
 }
 
-typedef enum { // 开机 或者升级
-    FH_BL_UPGRADE_TYPE_NONE = 0, // 正常启动
-    FH_BL_UPGRADE_TYPE_KEY,      // 按键触发升级
-    FH_BL_UPGRADE_TYPE_FLAG,     // 升级标志触发升级
-} fh_bl_upgrade_type_e;
-
 fh_bl_upgrade_type_e fh_bl_update_check(fh_bl_info_t *info)
 {
 
-    if (0) { // 按住按键开机
+    if (fh_key_get_state() == FH_BL_KEY_PRESSED) { // 按住按键开机
+        printf("key pressed, enter upgrade mode\r\n");
         return FH_BL_UPGRADE_TYPE_KEY; // 进入升级模式
     } else if (info->upgrade_flag == 1) { 
+        printf("upgrade flag set, enter upgrade mode\r\n");
         return FH_BL_UPGRADE_TYPE_FLAG; // 进入升级模式
     } else {
         return FH_BL_UPGRADE_TYPE_NONE; // 正常启动
@@ -193,28 +185,41 @@ int fh_bl_clear_app(void)
     return 0;
 }
 
-int fh_bl_update()
+// 返回
+int fh_bl_update(size_t *app_size)
 {
     uint8_t mem[sizeof(fh_stream_frame_t) + 256];
     fh_stream_frame_t *freame = (fh_stream_frame_t *)mem; 
     fh_bl_clear_app(); //清除APP区域FLASH数据
+    flash_write_ptr = FH_BL_APP_ADDR; //重置FLASH写入指针
     for (;;) {
         uint8_t buf;
         if (Read_RingBuff(&Uart1_RingBuff, &buf) == RINGBUFF_OK) {
             if (fh_stream_unpack(buf, freame) == FH_STREAM_EVENT_FRAME_RECEIVED) {
                 if (freame->tag == FH_STREAM_TAG_DATA) {
                     fh_bl_flash_write(freame->value, freame->length);
-                } else if (freame->tag == FH_STREAM_TAG_CMD) {
-                    // 接收结束，跳转到APP
+                } else if (freame->tag == FH_STREAM_TAG_CMD) {// 接收结束，跳转到APP
                     fh_bl_flash_write_final(); // 写入最后剩下的数据到flash
                     fh_bl_ack(pack_id);
+                    *app_size = flash_write_ptr - FH_BL_APP_ADDR; // 计算APP大小
                     break;
                 }
             }
         }
     }
-    
     return 0;
+}
+
+void fh_bl_hello(fh_bl_info_t *info)
+{
+    printf("=================fh bootloader v1.0=====================\r\n");
+    printf("bootloader version: %lu\r\n", info->boot_version);
+    printf("upgrade flag: %lu\r\n", info->upgrade_flag);
+    printf("app version: %lx\r\n", info->app_version);
+    printf("app build time: %lu\r\n", info->app_build_time);
+    printf("app size: %lu B\r\n", info->app_size);
+    printf("boot count: %lu\r\n", info->boot_count);
+    printf("=========================================================\r\n");
 }
 
 void fh_bl_jmp_to_app(int app_addr)
@@ -249,15 +254,18 @@ void fh_bl_jmp_to_app(int app_addr)
 void fh_bl_boot(void)
 {
     int ret = 0;
+    size_t app_size = 0;
     fh_bl_info_t bl_info;
     fh_bl_info_read(&bl_info);
     bl_info.boot_count++; // 启动计数加1
+    bl_info.boot_version = FH_BL_VERSION; // 设置bootloader版本
     fh_bl_hello(&bl_info);
     ret = fh_bl_update_check(&bl_info);
     fh_bl_info_write(&bl_info);
     if (ret != FH_BL_UPGRADE_TYPE_NONE) // 需要升级
     {
-        fh_bl_update();
+        fh_bl_update(&app_size);
+        bl_info.app_size = app_size; // 设置app大小
         bl_info.upgrade_flag = 0; // 下载固件后清除升级标志
         fh_bl_info_write(&bl_info);
     }
