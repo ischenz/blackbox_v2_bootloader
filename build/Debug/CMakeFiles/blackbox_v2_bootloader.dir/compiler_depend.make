@@ -83,6 +83,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: C:/Users/ische/Deskto
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_bootloader/fh_bootloader.h \
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff/ringbuff.h \
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_stream/fh_stream.h \
+  C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
@@ -94,7 +95,10 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: C:/Users/ische/Deskto
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdio.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_pthreadtypes.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_sigset.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
@@ -109,6 +113,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: C:/Users/ische/Deskto
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/sched.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/select.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/timespec.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/types.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
@@ -945,6 +950,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj: C:/User
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_bootloader/fh_bootloader.h \
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff/ringbuff.h \
   C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_stream/fh_stream.h \
+  C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
@@ -1084,6 +1090,32 @@ CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj: C:/Users/ische/
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
 
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.c \
+  C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+
+c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h:
 
@@ -1094,8 +1126,6 @@ c:/users/ische/desktop/blackbox_v2_bootloader/drivers/stm32f4xx_hal_driver/inc/s
 c:/users/ische/desktop/blackbox_v2_bootloader/drivers/stm32f4xx_hal_driver/inc/stm32f4xx_hal_cortex.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h:
-
-c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/select.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
 
@@ -1118,6 +1148,8 @@ c:/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/std
 c:/users/ische/desktop/blackbox_v2_bootloader/core/inc/crc.h:
 
 c:/users/ische/desktop/blackbox_v2_bootloader/core/inc/main.h:
+
+C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.h:
 
 c:/users/ische/desktop/blackbox_v2_bootloader/drivers/cmsis/include/mpu_armv7.h:
 
@@ -1185,9 +1217,9 @@ c:/users/ische/desktop/blackbox_v2_bootloader/drivers/stm32f4xx_hal_driver/inc/s
 
 c:/users/ische/desktop/blackbox_v2_bootloader/core/inc/gpio.h:
 
-C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/main.c:
-
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h:
+
+C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/main.c:
 
 C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff/ringbuff.h:
 
@@ -1207,6 +1239,10 @@ c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/types.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h:
 
+c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h:
+
+c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h:
+
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_pthreadtypes.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h:
@@ -1220,6 +1256,8 @@ c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h:
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/sched.h:
+
+c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/select.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/timespec.h:
 
@@ -1246,8 +1284,6 @@ c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/time.h:
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/signal.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h:
-
-c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h:
 
 c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/signal.h:
 
@@ -1297,10 +1333,8 @@ C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/s
 
 C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_bootloader/fh_bootloader.c:
 
-c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h:
-
-c:/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h:
-
 C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff/ringbuff.c:
 
 C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_stream/fh_stream.c:
+
+C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.c:

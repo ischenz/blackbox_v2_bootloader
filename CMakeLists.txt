@@ -50,6 +50,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     fh_bootloader/fh_bootloader.c
     fh_ringbuff/ringbuff.c
     fh_stream/fh_stream.c
+    fh_sw_crc/fh_sw_crc.c
     # Add user sources here
 )
 
@@ -58,6 +59,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     fh_bootloader/
     fh_ringbuff/
     fh_stream/
+    fh_sw_crc/
     # Add user defined include paths
 )
 

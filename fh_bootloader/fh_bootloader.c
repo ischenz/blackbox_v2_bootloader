@@ -8,6 +8,7 @@
  */
 #include "fh_bootloader.h"
 #include "fh_stream.h"
+#include "fh_sw_crc.h"
 #include "ringbuff.h"
 #include "string.h"
 #include "usart.h"
@@ -16,7 +17,6 @@
 
 RingBuff_t Uart1_RingBuff;
 uint8_t rxbuf_u1;
-uint32_t pack_id = 0;
 
 #define  FH_BL_KEY_PRESSED  1  // 按键按下状态，GPIO读取到0
 #define  FH_BL_KEY_RELEASED 0
@@ -121,6 +121,7 @@ int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
 static uint8_t write_buff[1024] = {0}; // 写入缓冲区
 static uint16_t write_ptr = 0; // 写入缓冲区指针
 static uint32_t flash_write_ptr = FH_BL_APP_ADDR; // FLASH写入指针，初始为APP地址
+static uint32_t pack_id = 0;
 int fh_bl_flash_write(uint8_t *data, uint16_t len)
 {
     uint32_t id = *(uint32_t *)data;
@@ -185,25 +186,61 @@ int fh_bl_clear_app(void)
     return 0;
 }
 
+int fh_bl_crc_check(uint32_t app_addr, uint32_t app_size, uint32_t app_crc)
+{
+    uint32_t crc = fh_sw_crc32((uint8_t *)app_addr, app_size);
+    return crc == app_crc ? 0 : -1; // 返回0表示校验通过，-1表示校验失败
+}
+
 // 返回
 int fh_bl_update(size_t *app_size)
 {
     uint8_t mem[sizeof(fh_stream_frame_t) + 256];
     fh_stream_frame_t *freame = (fh_stream_frame_t *)mem; 
-    fh_bl_clear_app(); //清除APP区域FLASH数据
-    flash_write_ptr = FH_BL_APP_ADDR; //重置FLASH写入指针
+    fh_bl_clear_app();                  //清除APP区域FLASH数据
+    flash_write_ptr = FH_BL_APP_ADDR;   //重置FLASH写入指针
+    write_ptr = 0;                      //重置写入缓冲区指针
+    pack_id = 0;                        //重置数据包ID
     for (;;) {
         uint8_t buf;
         if (Read_RingBuff(&Uart1_RingBuff, &buf) == RINGBUFF_OK) {
             if (fh_stream_unpack(buf, freame) == FH_STREAM_EVENT_FRAME_RECEIVED) {
-                if (freame->tag == FH_STREAM_TAG_DATA) {
-                    fh_bl_flash_write(freame->value, freame->length);
-                } else if (freame->tag == FH_STREAM_TAG_CMD) {// 接收结束，跳转到APP
-                    fh_bl_flash_write_final(); // 写入最后剩下的数据到flash
-                    fh_bl_ack(pack_id);
-                    *app_size = flash_write_ptr - FH_BL_APP_ADDR; // 计算APP大小
-                    break;
+                switch (freame->tag) {
+                    case FH_STREAM_TAG_DATA:
+                        fh_bl_flash_write(freame->value, freame->length);
+                        break;
+                    case FH_STREAM_TAG_CMD: // 接收结束，校验crc跳转到APP
+                        fh_bl_flash_write_final(); // 写入最后剩下的数据到flash
+                        if (fh_bl_crc_check(FH_BL_APP_ADDR, flash_write_ptr - FH_BL_APP_ADDR, *(uint32_t *)freame->value) == 0) { // 校验APP的CRC
+                            fh_bl_ack(0); // 发送升级成功ACK
+                            *app_size = flash_write_ptr - FH_BL_APP_ADDR; // 计算APP大小
+                            return 0; // 升级成功
+                        } else { // 校验失败，清除APP区域FLASH数据，重置写入指针，继续等待数据
+                            printf("app crc check failed\r\n"); 
+                            fh_bl_clear_app();
+                            fh_bl_ack(1); // 发送升级成功ACK
+                            flash_write_ptr = FH_BL_APP_ADDR; //重置FLASH写入指针
+                            write_ptr = 0;           //重置写入缓冲区指针
+                            pack_id = 0;             //重置数据包ID
+                            return -1; 
+                        }
+                        break;
+                    default:
+                        break;
                 }
+                // if (freame->tag == FH_STREAM_TAG_DATA) {
+                //     fh_bl_flash_write(freame->value, freame->length);
+                // } else if (freame->tag == FH_STREAM_TAG_CMD) {// 接收结束，校验crc跳转到APP
+                //     fh_bl_flash_write_final(); // 写入最后剩下的数据到flash
+                //     if (fh_bl_crc_check(FH_BL_APP_ADDR, flash_write_ptr - FH_BL_APP_ADDR, *(uint32_t *)freame->value) == 0) { // 校验APP的CRC
+                //         fh_bl_ack(pack_id);
+                //         *app_size = flash_write_ptr - FH_BL_APP_ADDR; // 计算APP大小
+                //         break;
+                //     } else { // 校验失败，清除APP区域FLASH数据，重置写入指针，继续等待数据
+                //         printf("app crc check failed\r\n"); 
+                //         fh_bl_clear_app();
+                //     }
+                // }
             }
         }
     }
@@ -264,7 +301,10 @@ void fh_bl_boot(void)
     fh_bl_info_write(&bl_info);
     if (ret != FH_BL_UPGRADE_TYPE_NONE) // 需要升级
     {
-        fh_bl_update(&app_size);
+        if (fh_bl_update(&app_size) != 0) {
+            // 处理升级失败的情况 软重启
+            NVIC_SystemReset();
+        }
         bl_info.app_size = app_size; // 设置app大小
         bl_info.upgrade_flag = 0; // 下载固件后清除升级标志
         fh_bl_info_write(&bl_info);

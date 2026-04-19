@@ -34,6 +34,11 @@ CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj: \
  c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
  c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
+ C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_sw_crc/fh_sw_crc.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h \
  C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_ringbuff/ringbuff.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\core\inc\main.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal.h \
@@ -63,9 +68,5 @@ CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj: \
  c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr_ex.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_uart.h \
- c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
- c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
- c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
- c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\core\inc\usart.h \
  c:\users\ische\desktop\blackbox_v2_bootloader\core\inc\main.h

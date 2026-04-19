@@ -53,6 +53,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj.d"
   "CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj"
   "CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj.d"
+  "CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj"
+  "CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj.d"
   "CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj"
   "blackbox_v2_bootloader.elf"
   "blackbox_v2_bootloader.elf.manifest"

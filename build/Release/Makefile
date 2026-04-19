@@ -776,6 +776,30 @@ fh_stream/fh_stream.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.s
 .PHONY : fh_stream/fh_stream.c.s
 
+fh_sw_crc/fh_sw_crc.obj: fh_sw_crc/fh_sw_crc.c.obj
+.PHONY : fh_sw_crc/fh_sw_crc.obj
+
+# target to build an object file
+fh_sw_crc/fh_sw_crc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj
+.PHONY : fh_sw_crc/fh_sw_crc.c.obj
+
+fh_sw_crc/fh_sw_crc.i: fh_sw_crc/fh_sw_crc.c.i
+.PHONY : fh_sw_crc/fh_sw_crc.i
+
+# target to preprocess a source file
+fh_sw_crc/fh_sw_crc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.i
+.PHONY : fh_sw_crc/fh_sw_crc.c.i
+
+fh_sw_crc/fh_sw_crc.s: fh_sw_crc/fh_sw_crc.c.s
+.PHONY : fh_sw_crc/fh_sw_crc.s
+
+# target to generate assembly for a file
+fh_sw_crc/fh_sw_crc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.s
+.PHONY : fh_sw_crc/fh_sw_crc.c.s
+
 startup_stm32f411xe.obj: startup_stm32f411xe.s.obj
 .PHONY : startup_stm32f411xe.obj
 
@@ -874,6 +898,9 @@ help:
 	@echo ... fh_stream/fh_stream.obj
 	@echo ... fh_stream/fh_stream.i
 	@echo ... fh_stream/fh_stream.s
+	@echo ... fh_sw_crc/fh_sw_crc.obj
+	@echo ... fh_sw_crc/fh_sw_crc.i
+	@echo ... fh_sw_crc/fh_sw_crc.s
 	@echo ... startup_stm32f411xe.obj
 .PHONY : help
 

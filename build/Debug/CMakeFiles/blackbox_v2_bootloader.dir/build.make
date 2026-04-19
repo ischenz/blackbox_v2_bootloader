@@ -113,10 +113,24 @@ CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.s"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_stream\fh_stream.c -o CMakeFiles\blackbox_v2_bootloader.dir\fh_stream\fh_stream.c.s
 
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.c
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj"
+	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\fh_sw_crc\fh_sw_crc.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\fh_sw_crc\fh_sw_crc.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_sw_crc\fh_sw_crc.c
+
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.i"
+	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_sw_crc\fh_sw_crc.c > CMakeFiles\blackbox_v2_bootloader.dir\fh_sw_crc\fh_sw_crc.c.i
+
+CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.s"
+	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_sw_crc\fh_sw_crc.c -o CMakeFiles\blackbox_v2_bootloader.dir\fh_sw_crc\fh_sw_crc.c.s
+
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/main.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\main.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\main.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\main.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.i: cmake_force
@@ -130,7 +144,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/gpio.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\gpio.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\gpio.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.i: cmake_force
@@ -144,7 +158,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/crc.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\crc.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\crc.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\crc.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.i: cmake_force
@@ -158,7 +172,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/usart.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\usart.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\usart.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\usart.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.i: cmake_force
@@ -172,7 +186,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/usart.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/stm32f4xx_it.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\stm32f4xx_it.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -186,7 +200,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -200,7 +214,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_forc
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i: cmake_force
@@ -214,7 +228,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -228,7 +242,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -242,7 +256,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -256,7 +270,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -270,7 +284,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -284,7 +298,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -298,7 +312,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -312,7 +326,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -326,7 +340,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -340,7 +354,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -354,7 +368,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -368,7 +382,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -382,7 +396,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -396,7 +410,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -410,7 +424,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/system_stm32f4xx.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\system_stm32f4xx.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -424,7 +438,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/sysmem.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\sysmem.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\sysmem.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.i: cmake_force
@@ -438,7 +452,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/Core/Src/syscalls.c
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj: CMakeFiles/blackbox_v2_bootloader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\blackbox_v2_bootloader.dir\Core\Src\syscalls.c.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\Core\Src\syscalls.c
 
 CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.i: cmake_force
@@ -451,7 +465,7 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj: CMakeFiles/blackbox_v2_bootloader.dir/flags.make
 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj: C:/Users/ische/Desktop/blackbox_v2_bootloader/startup_stm32f411xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blackbox_v2_bootloader.dir\startup_stm32f411xe.s.obj -c C:\Users\ische\Desktop\blackbox_v2_bootloader\startup_stm32f411xe.s
 
 CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.i: cmake_force
@@ -467,6 +481,7 @@ blackbox_v2_bootloader_OBJECTS = \
 "CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj" \
 "CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj" \
 "CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj" \
+"CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj" \
 "CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj" \
 "CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj" \
@@ -499,6 +514,7 @@ blackbox_v2_bootloader_EXTERNAL_OBJECTS =
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj
+blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/gpio.c.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/crc.c.obj
@@ -526,7 +542,7 @@ blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/sysca
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/startup_stm32f411xe.s.obj
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/build.make
 blackbox_v2_bootloader.elf: CMakeFiles/blackbox_v2_bootloader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable blackbox_v2_bootloader.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking C executable blackbox_v2_bootloader.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\blackbox_v2_bootloader.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Generate blackbox_v2_bootloader.bin from ELF"
 	C:\tools\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-objcopy.exe -O binary C:/Users/ische/Desktop/blackbox_v2_bootloader/build/Debug/blackbox_v2_bootloader.elf blackbox_v2_bootloader.bin

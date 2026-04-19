@@ -106,12 +106,12 @@ cmake/stm32cubemx/clean:
 CMakeFiles/blackbox_v2_bootloader.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target blackbox_v2_bootloader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target blackbox_v2_bootloader"
 .PHONY : CMakeFiles/blackbox_v2_bootloader.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/blackbox_v2_bootloader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/blackbox_v2_bootloader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles 0
 .PHONY : CMakeFiles/blackbox_v2_bootloader.dir/rule
@@ -123,7 +123,7 @@ blackbox_v2_bootloader: CMakeFiles/blackbox_v2_bootloader.dir/rule
 # codegen rule for target.
 CMakeFiles/blackbox_v2_bootloader.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blackbox_v2_bootloader.dir\build.make CMakeFiles/blackbox_v2_bootloader.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Finished codegen for target blackbox_v2_bootloader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ische\Desktop\blackbox_v2_bootloader\build\Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Finished codegen for target blackbox_v2_bootloader"
 .PHONY : CMakeFiles/blackbox_v2_bootloader.dir/codegen
 
 # clean rule for target.

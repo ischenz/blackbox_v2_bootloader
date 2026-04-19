@@ -23,6 +23,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_bootloader"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_stream"
+  "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/cmake/stm32cubemx/../../Core/Inc"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
@@ -59,6 +60,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_bootloader/fh_bootloader.c" "CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj" "gcc" "CMakeFiles/blackbox_v2_bootloader.dir/fh_bootloader/fh_bootloader.c.obj.d"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_ringbuff/ringbuff.c" "CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj" "gcc" "CMakeFiles/blackbox_v2_bootloader.dir/fh_ringbuff/ringbuff.c.obj.d"
   "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_stream/fh_stream.c" "CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj" "gcc" "CMakeFiles/blackbox_v2_bootloader.dir/fh_stream/fh_stream.c.obj.d"
+  "C:/Users/ische/Desktop/blackbox_v2_bootloader/fh_sw_crc/fh_sw_crc.c" "CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj" "gcc" "CMakeFiles/blackbox_v2_bootloader.dir/fh_sw_crc/fh_sw_crc.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

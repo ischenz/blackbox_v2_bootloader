@@ -66,4 +66,9 @@ CMakeFiles/blackbox_v2_bootloader.dir/Core/Src/main.c.obj: \
  c:\users\ische\desktop\blackbox_v2_bootloader\core\inc\gpio.h \
  C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_ringbuff/ringbuff.h \
  C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_bootloader/fh_bootloader.h \
- C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_stream/fh_stream.h
+ C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_stream/fh_stream.h \
+ C:\Users\ische\Desktop\blackbox_v2_bootloader\fh_sw_crc/fh_sw_crc.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
+ c:\tools\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h
