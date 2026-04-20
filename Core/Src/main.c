@@ -48,7 +48,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern RingBuff_t Uart1_RingBuff;
 extern uint8_t rxbuf_u1;
 /* USER CODE END PV */
 

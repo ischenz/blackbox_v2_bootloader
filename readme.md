@@ -1,19 +1,20 @@
 # BlackBox V2 Bootloader
 
-基于fh_stream传输协议的STM32F411 Bootloader项目。
+基于fh_stream传输协议的STM32 Bootloader项目。
+BlackBox是一个航模黑盒子项目，为了使方便升级，便有了本项目。
 
 ## 项目描述
 
-这是一个专为STM32F411CEU6微控制器设计的bootloader，支持通过串口或其他接口进行固件更新。项目使用STM32CubeMX生成的基础代码，并集成了自定义的fh_stream传输协议、环形缓冲区和bootloader逻辑。
+这是一个专为STM32微控制器设计的bootloader，支持通过串口或其他接口进行固件更新。项目使用STM32CubeMX生成的基础代码，并集成了自定义的fh_stream传输协议、环形缓冲区和bootloader逻辑。
 
 ## 特性
 
-- 支持STM32F411CEU6微控制器
+- 支持STM32微控制器
 - 基于fh_stream协议的可靠数据传输
 
 ## 硬件要求
 
-- STM32F411CEU6微控制器
+- STM32微控制器
 - 串口通信接口（UART）
 
 ## 软件要求
@@ -83,5 +84,7 @@
 ## 贡献
 
 欢迎提交Issue和Pull Request来改进项目。
+
+上位机链接https://github.com/LiHuashii/firmware_updater
 
 

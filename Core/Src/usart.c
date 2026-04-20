@@ -33,6 +33,17 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 
+RingBuff_t Uart1_RingBuff;
+uint8_t rxbuf_u1;
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART1) {
+        if(Write_RingBuff(&Uart1_RingBuff, rxbuf_u1) == RINGBUFF_ERR){
+        }
+        HAL_UART_Receive_IT(&huart1, &rxbuf_u1, 1);
+    }
+}
+
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;

@@ -30,12 +30,13 @@ extern "C" {
 
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
+#include "ringbuff.h"
 /* USER CODE END Includes */
 
 extern UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN Private defines */
-
+extern RingBuff_t Uart1_RingBuff;
 /* USER CODE END Private defines */
 
 void MX_USART1_UART_Init(void);
