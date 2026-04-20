@@ -86,6 +86,7 @@ int fh_bl_clear_app(void)
     return 0;
 }
 
+//需要4字节对齐写入flash
 int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
 {
     HAL_FLASH_Unlock(); // 解锁FLASH
@@ -100,44 +101,23 @@ int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
     return 0; // 写入成功
 }
 
-
-/*****************************************fh_bootloader 内部函数*********************************************** */
 static uint8_t write_buff[1024] = {0}; // 写入缓冲区
-static uint16_t write_ptr = 0; // 写入缓冲区指针
+static uint16_t write_ptr = 0;          // 写入缓冲区指针 写入缓冲区已有的数据长度
 static uint32_t flash_write_ptr = FH_BL_APP_ADDR; // FLASH写入指针，初始为APP地址
-static uint32_t pack_id = 0;
-
-static int fh_bl_ack(uint32_t pack_id)
-{
-    int ret = 0;
-    uint8_t ack_buf[sizeof(fh_stream_frame_t) + 256];
-    ret = fh_stream_pack(ack_buf, FH_STREAM_TAG_ACK, (value_type *)&pack_id, 4);
-    fh_bl_packet_send(ack_buf, ret);
-    return ret;
-}
-
 static int fh_bl_flash_write(uint8_t *data, uint16_t len)
 {
-    uint32_t id = *(uint32_t *)data;
-    if (len < 4) {
-        return -1; // 数据长度不足4字节，无法解析id
-    }
-    if (id == pack_id) {//接收到正确的帧，写入缓冲区,缓冲区满写入flash
-        memcpy(write_buff + write_ptr, data + 4, len - 4); // 减去4字节的id
-        write_ptr += len - 4;
-        if (write_ptr >= 512) { // 接收到大于512字节的数据，写入flash
-            // 取4字节的整数倍长度写入flash，并更新写入指针和缓冲区指针
-            uint16_t write_len = (write_ptr / 4) * 4; // 取4字节的整数倍长度
-            if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {
-                return -1; // 写入flash失败
-            }
-            // 把剩下没写入的数据移到缓冲区开头
-            flash_write_ptr += write_len; // 更新flash写入指针
-            memmove(write_buff, write_buff + write_len, write_ptr - write_len); // 把剩下的数据移到缓冲区开头
-            write_ptr -= write_len; // 更新缓冲区指针
+    memcpy(write_buff + write_ptr, data, len); // 
+    write_ptr += len;
+    if (write_ptr >= 512) { // 接收到大于512字节的数据，写入flash
+        // 取4字节的整数倍长度写入flash，并更新写入指针和缓冲区指针
+        uint16_t write_len = (write_ptr / 4) * 4; // 取4字节的整数倍长度，舍去不足4字节的部分，留在缓冲区里等待下次写入时补齐到4字节再写入flash
+        if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {
+            return -1; // 写入flash失败
         }
-        fh_bl_ack(pack_id);
-        pack_id++;
+        // 把剩下没写入的数据移到缓冲区开头
+        flash_write_ptr += write_len; // 更新flash写入指针
+        memmove(write_buff, write_buff + write_len, write_ptr - write_len); // 把剩下的数据移到缓冲区开头
+        write_ptr -= write_len; // 更新缓冲区指针
     }
     return 0;
 }
@@ -146,7 +126,7 @@ static int fh_bl_flash_write(uint8_t *data, uint16_t len)
 static int fh_bl_flash_write_final(void)
 {
     if (write_ptr > 0) { // 如果缓冲区还有剩余数据，写入flash
-        uint16_t write_len = (write_ptr / 4) * 4 + 4; // 取4字节的整数倍长度
+        uint16_t write_len = (write_ptr / 4) * 4 + 4; // 取4字节的整数倍长度，如果不足4字节，补齐到4字节
         if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {
             return -1; // 写入flash失败
         }
@@ -154,6 +134,8 @@ static int fh_bl_flash_write_final(void)
     }
     return 0;
 }
+
+/*****************************************fh_bootloader 内部函数*********************************************** */
 
 static int fh_bl_crc_check(uint32_t app_addr, uint32_t app_size, uint32_t app_crc)
 {
@@ -186,21 +168,40 @@ static fh_bl_upgrade_type_e fh_bl_update_check(fh_bl_info_t *info)
     }
 }
 
+static int fh_bl_ack(uint32_t pack_id)
+{
+    int ret = 0;
+    uint8_t ack_buf[sizeof(fh_stream_frame_t) + sizeof(uint32_t) + sizeof(crc_type)]; // ACK帧缓冲区，包含帧头、tag、length、value和crc
+    ret = fh_stream_pack(ack_buf, FH_STREAM_TAG_ACK, (value_type *)&pack_id, sizeof(uint32_t)); // 打包ACK帧，tag为ACK，value为pack_id
+    fh_bl_packet_send(ack_buf, ret);
+    return ret;
+}
+
 static int fh_bl_update(size_t *app_size)
 {
-    uint8_t mem[sizeof(fh_stream_frame_t) + 256];
+    uint8_t mem[sizeof(fh_stream_frame_t) + (1 << sizeof(length_type) * 8)];
     fh_stream_frame_t *freame = (fh_stream_frame_t *)mem; 
     fh_bl_clear_app();                  //清除APP区域FLASH数据
+    static uint32_t pack_id = 0;
     flash_write_ptr = FH_BL_APP_ADDR;   //重置FLASH写入指针
     write_ptr = 0;                      //重置写入缓冲区指针
     pack_id = 0;                        //重置数据包ID
+
     for (;;) {
         uint8_t buf;
         if (Read_RingBuff(&Uart1_RingBuff, &buf) == RINGBUFF_OK) {
             if (fh_stream_unpack(buf, freame) == FH_STREAM_EVENT_FRAME_RECEIVED) {
+                uint32_t id = 0;
                 switch (freame->tag) {
-                    case FH_STREAM_TAG_DATA:
-                        fh_bl_flash_write(freame->value, freame->length);
+                    case FH_STREAM_TAG_DATA: // id在这里判断
+                        id = *(uint32_t *)freame->value;//前4字节是id
+                        if (id != pack_id || freame->length < 4) { // id不对，丢弃数据，
+                            FH_BL_PRINT("packet id mismatch, expected %lu but got %lu\r\n", pack_id, id);
+                            continue;
+                        }
+                        fh_bl_flash_write(freame->value + 4, freame->length - 4);
+                        fh_bl_ack(pack_id); // 发送ACK
+                        pack_id++; // 数据包ID加1
                         break;
                     case FH_STREAM_TAG_CMD: // 接收结束，校验crc跳转到APP
                         fh_bl_flash_write_final(); // 写入最后剩下的数据到flash
