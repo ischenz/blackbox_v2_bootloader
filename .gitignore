@@ -1,0 +1,30 @@
+# 编译生成的文件
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# 临时编译文件
+*.d
+*.obj
+*.elf
+*.map
+
+# 编译生成的文件夹
+/build
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# 其他
+*.log
+*.pid

@@ -8,9 +8,9 @@
  */
 #include "fh_bootloader.h"
 #include "fh_stream.h"
+#include <string.h>
 #include "fh_sw_crc.h"
 #include "ringbuff.h"
-#include "string.h"
 #include "usart.h"
 #include "main.h"
 
