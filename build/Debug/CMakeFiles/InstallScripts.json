@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/ische/Desktop/blackbox_v2_bootloader/build/Debug/cmake_install.cmake",
-		"C:/Users/ische/Desktop/blackbox_v2_bootloader/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
