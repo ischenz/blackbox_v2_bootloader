@@ -133,7 +133,7 @@ static int fh_bl_flash_write_final(size_t *app_size)
             return -1; // 写入flash失败
         }
     } 
-    *app_size = flash_write_ptr  - FH_BL_APP_ADDR; // 计算APP大小
+    *app_size = flash_write_ptr + write_ptr - FH_BL_APP_ADDR; // 计算APP大小
     flash_write_ptr += write_len; // 更新flash写入指针
     flash_write_ptr = FH_BL_APP_ADDR;   //重置FLASH写入指针
     write_ptr = 0;                      //重置写入缓冲区指针
