@@ -95,7 +95,7 @@ int fh_bl_clear_app(void)
     HAL_FLASH_Unlock();            //解锁
     FlashEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;     //擦除类型，扇区擦除
     FlashEraseInit.Sector = FH_BL_APP_SECTOR; //要擦除的扇区
-    FlashEraseInit.NbSectors = 1;                           //一次只擦除一个扇区
+    FlashEraseInit.NbSectors = FH_BL_APP_SECTOR_NUM;                           //一次只擦除一个扇区
     FlashEraseInit.VoltageRange = FLASH_VOLTAGE_RANGE_3;    //电压范围，VCC=2.7~3.6V之间!!
     if (HAL_FLASHEx_Erase(&FlashEraseInit, &SectorError) != HAL_OK)
     {
@@ -126,14 +126,14 @@ int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
     return 0; // 写入成功
 }
 
-static uint8_t write_buff[1024] = {0}; // 写入缓冲区
+static uint8_t write_buff[4096] = {0}; // 写入缓冲区
 static uint16_t write_ptr = 0;          // 写入缓冲区指针 写入缓冲区已有的数据长度
 static uint32_t flash_write_ptr = FH_BL_APP_ADDR; // FLASH写入指针，初始为APP地址
 static int fh_bl_flash_write(uint8_t *data, uint16_t len)
 {
     memcpy(write_buff + write_ptr, data, len); // 
     write_ptr += len;
-    if (write_ptr >= 512) { // 接收到大于512字节的数据，写入flash
+    if (write_ptr >= 3072) { // 接收到大于512字节的数据，写入flash
         // 取4字节的整数倍长度写入flash，并更新写入指针和缓冲区指针
         uint16_t write_len = (write_ptr / 4) * 4; // 取4字节的整数倍长度，舍去不足4字节的部分，留在缓冲区里等待下次写入时补齐到4字节再写入flash
         if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {

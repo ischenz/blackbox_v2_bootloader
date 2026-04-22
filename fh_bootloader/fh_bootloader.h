@@ -9,6 +9,7 @@
 #define FH_BL_INFO_ADDR (0x0800C000) // bootloader信息存放地址
 #define FH_BL_INFO_SECTOR FLASH_SECTOR_3 // bootloader信息存放扇区
 #define FH_BL_APP_SECTOR  FLASH_SECTOR_4 // app存放扇区
+#define FH_BL_APP_SECTOR_NUM 4
 
 typedef enum { // 开机 或者升级
     FH_BL_UPGRADE_TYPE_NONE = 0, // 正常启动
