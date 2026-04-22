@@ -32,7 +32,9 @@ int fh_key_get_state(void)
 
 int fh_bl_info_write(fh_bl_info_t *info)
 {
-    info->magic = 0x5A5A5A5A; // 设置magic
+    info->magic = FH_BL_INFO_MAGIC; // 设置magic
+    info->info_crc = 0; // 先把CRC字段清零，计算CRC时不包含CRC字段本身
+    info->info_crc = fh_sw_crc32((uint8_t *)info, sizeof(fh_bl_info_t)); // 计算info区数据的CRC
     HAL_FLASH_Unlock(); // 解锁FLASH
     // 先擦除info区所在的扇区，再写入数据
     FLASH_EraseInitTypeDef FlashEraseInit;
@@ -61,6 +63,28 @@ int fh_bl_info_write(fh_bl_info_t *info)
     }
     HAL_FLASH_Lock(); // 上锁FLASH
     return 0; // 写入成功
+}
+
+/**
+ * @brief 读取info区数据到info结构体，校验CRC，如果无效则清零info结构体并设置升级标志
+ * 
+ * @param info 
+ * @return int info有效返回0，info无效返回-1
+ */
+static int fh_bl_info_read(fh_bl_info_t *info)
+{
+    int ret = 0;
+    memcpy(info, (void *)FH_BL_INFO_ADDR, sizeof(fh_bl_info_t));
+    uint32_t original_crc = info->info_crc; // 保存原始CRC值
+    info->info_crc = 0; // 先把CRC字段清零，计算CRC时不包含CRC字段本身
+    if ((fh_sw_crc32((uint8_t *)info, sizeof(fh_bl_info_t)) != original_crc) || (info->magic != FH_BL_INFO_MAGIC)) { // CRC校验失败或magic不正确，说明info区数据无效
+        FH_BL_PRINT("bootloader info crc check failed\r\n");
+        memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
+        info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
+        info->upgrade_flag = 1; // 需要升级
+        ret = -1;
+    }
+    return ret; // 返回0表示info有效，-1表示info无效
 }
 
 int fh_bl_clear_app(void)
@@ -157,17 +181,6 @@ static int fh_bl_crc_check(uint32_t app_addr, uint32_t app_size, uint32_t app_cr
         ret = -1;
     }
     return ret; // 返回0表示校验通过，-1表示校验失败
-}
-
-static void fh_bl_info_read(fh_bl_info_t *info)
-{
-    memcpy(info, (void *)FH_BL_INFO_ADDR, sizeof(fh_bl_info_t));
-    if (info->magic != FH_BL_INFO_MAGIC) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
-        FH_BL_PRINT("bootloader info invalid, initialize it\r\n");
-        memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
-        info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
-        info->upgrade_flag = 1; // 需要升级
-    }
 }
 
 static fh_bl_upgrade_type_e fh_bl_update_check(fh_bl_info_t *info)
