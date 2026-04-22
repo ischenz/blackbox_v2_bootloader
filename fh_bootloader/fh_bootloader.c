@@ -255,6 +255,7 @@ static int fh_bl_update(size_t *app_size)
 static void fh_bl_hello(fh_bl_info_t *info)
 {
     time_t t = (time_t)(info->app_build_time);
+    FH_BL_PRINT("\r\n");
     FH_BL_PRINT("=================fh bootloader v1.0=====================\r\n");
     FH_BL_PRINT("bootloader version: %lx\r\n", info->boot_version);
     FH_BL_PRINT("upgrade flag: %lu\r\n", info->upgrade_flag);
@@ -263,13 +264,25 @@ static void fh_bl_hello(fh_bl_info_t *info)
     FH_BL_PRINT("app size: %lu B\r\n", info->app_size);
     FH_BL_PRINT("boot count: %lu\r\n", info->boot_count);
     FH_BL_PRINT("=========================================================\r\n");
+    FH_BL_PRINT("=========================================================\r\n");
 }
 
-static void fh_bl_jmp_to_app(int app_addr)
+/**
+ * @brief 跳转至app程序
+ * 
+ * @param app_addr 
+ * @return int 指针不合法返回-1
+ */
+static int fh_bl_jmp_to_app(int app_addr)
 {
     typedef void (*app_fun_t)(void);
     app_fun_t app_fun = (app_fun_t)*(uint32_t *)(app_addr + 4);
-    HAL_NVIC_DisableIRQ(USART1_IRQn);
+    // Reset Hanlder 合法性检查
+
+    // 检查栈顶指针合法性
+    if(((*(uint32_t*)app_addr)&0x2FFC0000) != 0x20000000) {   //检查栈顶地址是否合法.(0x2000 0000 ~ 0x2003 0000)
+        return -1;
+    }
     __disable_irq();
     //停用 HAL 和系统节拍
     HAL_DeInit();
@@ -284,14 +297,12 @@ static void fh_bl_jmp_to_app(int app_addr)
     //重定位中断向量
     SCB->VTOR = app_addr;
     // Set the MSP to the value at the start of the application
-    __set_MSP(*(uint32_t*)app_addr);
+    __set_MSP(*(uint32_t*)app_addr); // app也有设置sp指针
     //再打开中断
     __enable_irq();
     // Jump to the application entry point
     app_fun();
-    for (;;){
-
-    }
+    return -2;
 }
 
 void fh_bl_boot(void)
@@ -316,5 +327,12 @@ void fh_bl_boot(void)
         bl_info.upgrade_flag = 0; // 下载固件后清除升级标志
         fh_bl_info_write(&bl_info);
     }
-    fh_bl_jmp_to_app(FH_BL_APP_ADDR);
+    FH_BL_PRINT("boot...\r\n");
+    ret = fh_bl_jmp_to_app(FH_BL_APP_ADDR);
+    if ( ret != 0) {
+        FH_BL_PRINT("MSP Err!!!\r\n");
+        FH_BL_PRINT("Reboot ...\r\n");
+        HAL_Delay(2000);
+        NVIC_SystemReset();
+    }
 }
