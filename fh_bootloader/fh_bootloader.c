@@ -278,7 +278,9 @@ static int fh_bl_jmp_to_app(int app_addr)
     typedef void (*app_fun_t)(void);
     app_fun_t app_fun = (app_fun_t)*(uint32_t *)(app_addr + 4);
     // Reset Hanlder 合法性检查
-
+    if(((uint32_t)app_addr&0xFFF00000) != 0x08000000) {   //检查Reset Handler.(0x080x xxxx)
+        return -1;
+    }
     // 检查栈顶指针合法性
     if(((*(uint32_t*)app_addr)&0x2FFC0000) != 0x20000000) {   //检查栈顶地址是否合法.(0x2000 0000 ~ 0x2003 0000)
         return -1;
