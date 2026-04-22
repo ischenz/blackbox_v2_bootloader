@@ -9,11 +9,11 @@
 #include "fh_bootloader.h"
 #include "fh_stream.h"
 #include <string.h>
-#include <time.h>
 #include "fh_sw_crc.h"
 #include "ringbuff.h"
 #include "usart.h"
 #include "main.h"
+#include "time.h"
 
 #define  FH_BL_KEY_PRESSED  1  // 按键按下状态，GPIO读取到0
 #define  FH_BL_KEY_RELEASED 0
@@ -27,12 +27,18 @@ int fh_bl_packet_send(uint8_t *data, uint16_t len)
 
 int fh_key_get_state(void)
 {
-    return HAL_GPIO_ReadPin(key_GPIO_Port, key_Pin); // TODO: 实现按键状态读取函数，返回1表示按键按下，0表示按键未按下
+    return 0;
+    // return HAL_GPIO_ReadPin(key_GPIO_Port, key_Pin); // TODO: 实现按键状态读取函数，返回1表示按键按下，0表示按键未按下
 }
 
 int fh_bl_info_write(fh_bl_info_t *info)
 {
     info->magic = 0x5A5A5A5A; // 设置magic
+
+    info->info_crc = 0;
+    uint32_t crc = fh_sw_crc32((uint8_t *)info, sizeof(fh_bl_info_t));
+    info->info_crc = crc;
+
     HAL_FLASH_Unlock(); // 解锁FLASH
     // 先擦除info区所在的扇区，再写入数据
     FLASH_EraseInitTypeDef FlashEraseInit;
@@ -40,6 +46,7 @@ int fh_bl_info_write(fh_bl_info_t *info)
     uint32_t SectorError = 0;
     FlashEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;     //擦除类型，扇区擦除
     FlashEraseInit.Sector = FH_BL_INFO_SECTOR; //要擦除的扇区
+    FlashEraseInit.Banks = FLASH_BANK_1; //要擦除的扇区所在的bank
     FlashEraseInit.NbSectors = 1;                           //一次只擦除一个扇区
     FlashEraseInit.VoltageRange = FLASH_VOLTAGE_RANGE_3;    //电压范围，VCC=2.7~3.6V之间!!
     if (HAL_FLASHEx_Erase(&FlashEraseInit, &SectorError) != HAL_OK)
@@ -47,14 +54,14 @@ int fh_bl_info_write(fh_bl_info_t *info)
         return -1; //发生错误了
     }
 
-    FlashStatus = FLASH_WaitForLastOperation(20000); //等待上次操作完成
+    FlashStatus = FLASH_WaitForLastOperation(20000, FLASH_BANK_1); //等待上次操作完成
     if (FlashStatus != HAL_OK)
     {
         return -1; //发生错误了
     }
-    for (uint16_t i = 0; i < sizeof(fh_bl_info_t); i += 4) {
-        uint32_t word = *(uint32_t *)((uint8_t *)info + i); // 取4字节数据
-        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, FH_BL_INFO_ADDR + i, word) != HAL_OK) {
+    for (uint16_t i = 0; i < sizeof(fh_bl_info_t); i += 32) {
+        uint32_t *word = (uint32_t *)((uint8_t *)info + i); // 取32字节数据
+        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_FLASHWORD, FH_BL_INFO_ADDR + i, (uint32_t)word) != HAL_OK) {
             HAL_FLASH_Lock(); // 上锁FLASH
             return -1; // 写入失败
         }
@@ -72,13 +79,14 @@ int fh_bl_clear_app(void)
     FlashEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;     //擦除类型，扇区擦除
     FlashEraseInit.Sector = FH_BL_APP_SECTOR; //要擦除的扇区
     FlashEraseInit.NbSectors = 1;                           //一次只擦除一个扇区
+    FlashEraseInit.Banks = FLASH_BANK_1; //要擦除的扇区所在的bank
     FlashEraseInit.VoltageRange = FLASH_VOLTAGE_RANGE_3;    //电压范围，VCC=2.7~3.6V之间!!
     if (HAL_FLASHEx_Erase(&FlashEraseInit, &SectorError) != HAL_OK)
     {
         return -1; //发生错误了
     }
 
-    FlashStatus = FLASH_WaitForLastOperation(20000); //等待上次操作完成
+    FlashStatus = FLASH_WaitForLastOperation(20000, FLASH_BANK_1); //等待上次操作完成
     if (FlashStatus != HAL_OK)
     {
         return -1; //发生错误了
@@ -87,13 +95,13 @@ int fh_bl_clear_app(void)
     return 0;
 }
 
-//需要4字节对齐写入flash
+//需要32字节对齐写入flash
 int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
 {
     HAL_FLASH_Unlock(); // 解锁FLASH
-    for (uint16_t i = 0; i < len; i += 4) {
-        uint32_t word = *(uint32_t *)(data + i); // 取4字节数据
-        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr + i, word) != HAL_OK) {
+    for (uint16_t i = 0; i < len; i += 32) {
+        uint32_t *word = (uint32_t *)(data + i); // 取32字节数据
+        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_FLASHWORD, addr + i, (uint32_t)word) != HAL_OK) {
             HAL_FLASH_Lock(); // 上锁FLASH
             return -1; // 写入失败
         }
@@ -102,7 +110,7 @@ int stm32_flash_write(uint32_t addr, uint8_t *data, uint16_t len)
     return 0; // 写入成功
 }
 
-static uint8_t write_buff[1024] = {0}; // 写入缓冲区
+static __attribute__((aligned(32))) uint8_t write_buff[1024] = {0}; // 写入缓冲区
 static uint16_t write_ptr = 0;          // 写入缓冲区指针 写入缓冲区已有的数据长度
 static uint32_t flash_write_ptr = FH_BL_APP_ADDR; // FLASH写入指针，初始为APP地址
 static int fh_bl_flash_write(uint8_t *data, uint16_t len)
@@ -111,7 +119,7 @@ static int fh_bl_flash_write(uint8_t *data, uint16_t len)
     write_ptr += len;
     if (write_ptr >= 512) { // 接收到大于512字节的数据，写入flash
         // 取4字节的整数倍长度写入flash，并更新写入指针和缓冲区指针
-        uint16_t write_len = (write_ptr / 4) * 4; // 取4字节的整数倍长度，舍去不足4字节的部分，留在缓冲区里等待下次写入时补齐到4字节再写入flash
+        uint16_t write_len = (write_ptr / 32) * 32; // 取4字节的整数倍长度，舍去不足4字节的部分，留在缓冲区里等待下次写入时补齐到4字节再写入flash
         if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {
             return -1; // 写入flash失败
         }
@@ -128,7 +136,7 @@ static int fh_bl_flash_write_final(size_t *app_size)
 {
     int16_t write_len = 0; 
     if (write_ptr > 0) { // 如果缓冲区还有剩余数据，写入flash
-        write_len = (write_ptr / 4) * 4 + 4; // 取4字节的整数倍长度，如果不足4字节，补齐到4字节
+        write_len = (write_ptr / 32) * 32 + 32; // 取32字节的整数倍长度，如果不足32字节，补齐到32字节
         if (stm32_flash_write(flash_write_ptr, write_buff, write_len) != 0) {
             return -1; // 写入flash失败
         }
@@ -162,12 +170,20 @@ static int fh_bl_crc_check(uint32_t app_addr, uint32_t app_size, uint32_t app_cr
 static void fh_bl_info_read(fh_bl_info_t *info)
 {
     memcpy(info, (void *)FH_BL_INFO_ADDR, sizeof(fh_bl_info_t));
-    if (info->magic != FH_BL_INFO_MAGIC) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
-        FH_BL_PRINT("bootloader info invalid, initialize it\r\n");
-        memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
-        info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
-        info->upgrade_flag = 1; // 需要升级
+    if (info->magic == FH_BL_INFO_MAGIC) { // 烧录bootloader后第一次上电没有app，info区数据无效，magic不正确，清零info区
+        uint32_t stored_crc = info->info_crc;
+        info->info_crc = 0;
+        uint32_t calc_crc = fh_sw_crc32((uint8_t *)info, sizeof(fh_bl_info_t));
+        if (calc_crc == stored_crc) {
+            // CRC 校验通过
+            info->info_crc = stored_crc;
+            return;
+        }
     }
+    FH_BL_PRINT("bootloader info invalid, initialize it\r\n");
+    memset(info, 0x00, sizeof(fh_bl_info_t)); // 无效信息，全0xFF表示
+    info->magic = FH_BL_INFO_MAGIC; // 设置magic，表示info区已初始化
+    info->upgrade_flag = 1; // 需要升级
 }
 
 static fh_bl_upgrade_type_e fh_bl_update_check(fh_bl_info_t *info)
