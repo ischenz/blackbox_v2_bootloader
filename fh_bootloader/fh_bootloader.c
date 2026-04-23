@@ -317,7 +317,6 @@ void fh_bl_boot(void)
     bl_info.boot_version = FH_BL_VERSION; // 设置bootloader版本
     fh_bl_hello(&bl_info);
     ret = fh_bl_update_check(&bl_info);
-    fh_bl_info_write(&bl_info);
     if (ret != FH_BL_UPGRADE_TYPE_NONE) // 需要升级
     {
         if (fh_bl_update(&app_size) != 0) {
@@ -327,9 +326,10 @@ void fh_bl_boot(void)
         FH_BL_PRINT("app upgrade success, size: %u B\r\n", app_size);
         bl_info.app_size = app_size; // 设置app大小
         bl_info.upgrade_flag = 0; // 下载固件后清除升级标志
-        fh_bl_info_write(&bl_info);
     }
-    FH_BL_PRINT("boot...\r\n");
+    FH_BL_PRINT("boot\r\n");
+    HAL_Delay(1000);
+    fh_bl_info_write(&bl_info);
     ret = fh_bl_jmp_to_app(FH_BL_APP_ADDR);
     if ( ret != 0) {
         FH_BL_PRINT("MSP Err!!!\r\n");

@@ -12,7 +12,7 @@
         "USE_HAL_DRIVER",
         "STM32F411xE"
       ],
-      "compilerPath": "C:\\tools\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe",
+      "compilerPath": "C:\\tools\\arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
       "cStandard": "${default}",
       "cppStandard": "${default}",
       "intelliSenseMode": "windows-gcc-arm"
